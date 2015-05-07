@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+require 'json'
+
+Dir.glob(Rails.root + "lib/courses_data/103_2/*.json").each do |filename|
+  json = File.open(filename).read
+  courses = JSON.parse(json)
+  binding.pry
+end
