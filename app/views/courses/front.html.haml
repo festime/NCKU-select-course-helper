@@ -1,0 +1,70 @@
+.container
+  .col-md-3
+    .table-responsive
+      %table.table.table-bordered
+        %thead
+          %tr
+            %th #
+            %th 一
+            %th 二
+            %th 三
+            %th 四
+            %th 五
+        %tbody
+          - [1, 2, 3, 4, "N", 5, 6, 7, 8, 9].each do |number|
+            %tr.valid-td{:value => number}
+              %td= number
+              - ["monday", "tuesday", "wednesday", "thursday", "friday"].each do |day|
+                %td{:class => "#{day}"}
+  .col-md-6
+    = form_tag search_path do
+      .form-group
+        %h3 核心通識
+        .checkbox
+          %label
+            = hidden_field_tag('core[basic_chinese]', nil)
+            = check_box_tag('core[basic_chinese]')
+            基礎國文
+          %label
+            = hidden_field_tag('core[english]', nil)
+            = check_box_tag('core[english]')
+            英文
+          %label
+            = hidden_field_tag('core[citizenship_history]', nil)
+            = check_box_tag('core[citizenship_history]')
+            公民與歷史
+          %label
+            = hidden_field_tag('core[philosophy_art]', nil)
+            = check_box_tag('core[philosophy_art]')
+            哲學與藝術
+      .form-group
+        %h3 跨領域通識
+        .checkbox
+          %label
+            = hidden_field_tag('cross[integrated]', nil)
+            = check_box_tag('cross[integrated]')
+            科際整合
+          %label
+            = hidden_field_tag('cross[science_engineering]', nil)
+            = check_box_tag('cross[science_engineering]')
+            自然與工程科學
+          %label
+            = hidden_field_tag('cross[life_science_health]', nil)
+            = check_box_tag('cross[life_science_health]')
+            生命科學與健康
+          %label
+            = hidden_field_tag('cross[humanities]', nil)
+            = check_box_tag('cross[humanities]')
+            人文學
+          %label
+            = hidden_field_tag('cross[social_science]', nil)
+            = check_box_tag('cross[social_science]')
+            社會科學
+      .form-group
+        %input{:type => "hidden", :name => "freetime[1]", :id => "monday"}
+        %input{:type => "hidden", :name => "freetime[2]", :id => "tuesday"}
+        %input{:type => "hidden", :name => "freetime[3]", :id => "wednesday"}
+        %input{:type => "hidden", :name => "freetime[4]", :id => "thursday"}
+        %input{:type => "hidden", :name => "freetime[5]", :id => "friday"}
+      = submit_tag "找課", class: "btn btn-success"
+
