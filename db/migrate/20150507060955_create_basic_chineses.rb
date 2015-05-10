@@ -3,6 +3,7 @@ class CreateBasicChineses < ActiveRecord::Migration
     create_table :basic_chineses do |t|
       t.string :institute_code
       t.string :serial_number
+      t.string :year
       t.string :category
       t.boolean :taught_in_english
       t.string :course_name

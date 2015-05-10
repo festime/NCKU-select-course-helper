@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20150507061712) do
   create_table "basic_chineses", force: :cascade do |t|
     t.string  "institute_code"
     t.string  "serial_number"
+    t.string  "year"
     t.string  "category"
     t.boolean "taught_in_english"
     t.string  "course_name"
@@ -32,6 +33,7 @@ ActiveRecord::Schema.define(version: 20150507061712) do
   create_table "citizenship_histories", force: :cascade do |t|
     t.string  "institute_code"
     t.string  "serial_number"
+    t.string  "year"
     t.string  "category"
     t.boolean "taught_in_english"
     t.string  "course_name"
@@ -45,6 +47,7 @@ ActiveRecord::Schema.define(version: 20150507061712) do
   create_table "general_educations", force: :cascade do |t|
     t.string  "institute_code"
     t.string  "serial_number"
+    t.string  "year"
     t.string  "category"
     t.boolean "taught_in_english"
     t.string  "course_name"
@@ -58,6 +61,7 @@ ActiveRecord::Schema.define(version: 20150507061712) do
   create_table "international_languages", force: :cascade do |t|
     t.string  "institute_code"
     t.string  "serial_number"
+    t.string  "year"
     t.string  "category"
     t.boolean "taught_in_english"
     t.string  "course_name"
