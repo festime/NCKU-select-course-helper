@@ -26,9 +26,13 @@
             = check_box_tag('core[basic_chinese]')
             基礎國文
           %label
-            = hidden_field_tag('core[english]', nil)
-            = check_box_tag('core[english]')
-            英文
+            = hidden_field_tag('core[freshman_english]', nil)
+            = check_box_tag('core[freshman_english]')
+            大一英文
+          %label
+            = hidden_field_tag('core[sophomore_english]', nil)
+            = check_box_tag('core[sophomore_english]')
+            大二英文
           %label
             = hidden_field_tag('core[citizenship_history]', nil)
             = check_box_tag('core[citizenship_history]')
@@ -67,4 +71,35 @@
         %input{:type => "hidden", :name => "freetime[4]", :id => "thursday"}
         %input{:type => "hidden", :name => "freetime[5]", :id => "friday"}
       = submit_tag "找課", class: "btn btn-success"
-
+.container
+  .row
+    - if @courses
+      - @courses.each do |type, array_of_courses|
+        - if array_of_courses.present?
+          %h3= type_english_to_chinese(type)
+          .table-responsive
+            %table.table.table-bordered.table-striped
+              %thead
+                %tr
+                  %th 系號
+                  %th 序號
+                  %th 年級
+                  %th 類別
+                  %th 英語授課
+                  %th 課程名稱
+                  %th 學分
+                  %th 教師姓名
+                  %th 時間
+                  %th 教室
+                  %th 備註
+              %tbody
+                - array_of_courses.each do |course|
+                  %tr
+                    - course.attributes.each do |key, value|
+                      - if key != "id"
+                        - if key == "course_name"
+                          %td= value.html_safe
+                        - elsif key == "taught_in_english"
+                          %td= (value ? "是" : "否")
+                        - else
+                          %td= value
