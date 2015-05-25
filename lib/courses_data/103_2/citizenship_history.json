@@ -8,6 +8,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10100&amp;class_code=1%20\">公民與歷史(公民社會)</a>",
     "credits": "2",
     "instructor": "黃清賢",
+    "space_available": "117",
     "schedule": "[2]3~4",
     "classroom": "電機系館 迅慧講堂",
     "remark": ""
@@ -21,6 +22,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10100&amp;class_code=2%20\">公民與歷史(公民社會)</a>",
     "credits": "2",
     "instructor": "彭堅汶",
+    "space_available": "3",
     "schedule": "[5]3~4",
     "classroom": "社科院大樓 階梯教室-政治",
     "remark": ""
@@ -34,6 +36,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10300&amp;class_code=1%20\">公民與歷史(憲政民主體制)</a>",
     "credits": "2",
     "instructor": "孫順智",
+    "space_available": "額滿",
     "schedule": "[2]3~4",
     "classroom": "資訊系館 4203",
     "remark": ""
@@ -47,6 +50,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG40100&amp;class_code=1%20\">公民與歷史(法學緒論)</a>",
     "credits": "2",
     "instructor": "莊輝濤",
+    "space_available": "7",
     "schedule": "[2]5~6",
     "classroom": "資訊系館 4263",
     "remark": ""
@@ -60,6 +64,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG40100&amp;class_code=2%20\">公民與歷史(法學緒論)</a>",
     "credits": "2",
     "instructor": "黃清賢",
+    "space_available": "20",
     "schedule": "[2]7~8",
     "classroom": "耐震擴建大樓 5118",
     "remark": ""
@@ -73,6 +78,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10200&amp;class_code=1%20\">公民與歷史(公共管理)</a>",
     "credits": "2",
     "instructor": "黃清賢",
+    "space_available": "1",
     "schedule": "[3]5~6",
     "classroom": "測量系館 經緯廳",
     "remark": ""
@@ -86,6 +92,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10300&amp;class_code=2%20\">公民與歷史(憲政民主體制)</a>",
     "credits": "2",
     "instructor": "潘台雄",
+    "space_available": "63",
     "schedule": "[3]5~6",
     "classroom": "交管系館 62107",
     "remark": ""
@@ -99,6 +106,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10300&amp;class_code=3%20\">公民與歷史(憲政民主體制)</a>",
     "credits": "2",
     "instructor": "黃清賢",
+    "space_available": "158",
     "schedule": "[4]1~2",
     "classroom": "化工系館 華立廳",
     "remark": ""
@@ -112,6 +120,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10300&amp;class_code=4%20\">公民與歷史(憲政民主體制)</a>",
     "credits": "2",
     "instructor": "黃清賢",
+    "space_available": "7",
     "schedule": "[4]5~6",
     "classroom": "耐震擴建大樓 5108",
     "remark": ""
@@ -125,6 +134,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG40200&amp;class_code=1%20\">公民與歷史(司法與人權)</a>",
     "credits": "2",
     "instructor": "黃清賢",
+    "space_available": "17",
     "schedule": "[5]3~4",
     "classroom": "系統系館 56111",
     "remark": ""
@@ -138,6 +148,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG40100&amp;class_code=3%20\">公民與歷史(法學緒論)</a>",
     "credits": "2",
     "instructor": "蔡文斌",
+    "space_available": "額滿",
     "schedule": "[4]1~2",
     "classroom": "雲平大樓 27103",
     "remark": ""
@@ -151,6 +162,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG40100&amp;class_code=4%20\">公民與歷史(法學緒論)</a>",
     "credits": "2",
     "instructor": "李君韜",
+    "space_available": "額滿",
     "schedule": "[2]3~4",
     "classroom": "水利系館 4620",
     "remark": ""
@@ -164,6 +176,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG40100&amp;class_code=5%20\">公民與歷史(法學緒論)</a>",
     "credits": "2",
     "instructor": "李君韜",
+    "space_available": "1",
     "schedule": "[3]5~6",
     "classroom": "會計系館 63404",
     "remark": ""
@@ -177,6 +190,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10500&amp;class_code=1%20\">公民與歷史(歷史與文化)</a>",
     "credits": "2",
     "instructor": "蕭瓊瑞",
+    "space_available": "3",
     "schedule": "[2]3~4",
     "classroom": "歷史系館 振芝講堂",
     "remark": "台灣美術史"
@@ -190,6 +204,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10500&amp;class_code=2%20\">公民與歷史(歷史與文化)</a>",
     "credits": "2",
     "instructor": "蘇梅芳",
+    "space_available": "3",
     "schedule": "[3]5~6",
     "classroom": "歷史系館 25235",
     "remark": "晚清歷史與人物"
@@ -203,6 +218,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10600&amp;class_code=1%20\">公民與歷史(文本與歷史)</a>",
     "credits": "2",
     "instructor": "許守泯",
+    "space_available": "額滿",
     "schedule": "[3]5~6",
     "classroom": "唯農大樓 許文龍講堂",
     "remark": "文本與歷史"
@@ -216,6 +232,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10500&amp;class_code=4%20\">公民與歷史(歷史與文化)</a>",
     "credits": "2",
     "instructor": "張勝柏",
+    "space_available": "2",
     "schedule": "[2]3~4",
     "classroom": "化工系館 華立廳",
     "remark": "愛爾蘭歷史與文化"
@@ -229,6 +246,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10400&amp;class_code=%20%20\">公民與歷史(歷史通論)</a>",
     "credits": "2",
     "instructor": "蔡幸娟",
+    "space_available": "9",
     "schedule": "[4]1~2",
     "classroom": "歷史系館 25235",
     "remark": "過去與現代的對話"
@@ -242,6 +260,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10900&amp;class_code=%20%20\">公民與歷史(婦女史)</a>",
     "credits": "2",
     "instructor": "蔡幸娟",
+    "space_available": "8",
     "schedule": "[5]3~4",
     "classroom": "光復教學大樓(空大) 53101",
     "remark": "傳統中國婦女與政治"
@@ -255,6 +274,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10500&amp;class_code=6%20\">公民與歷史(歷史與文化)</a>",
     "credits": "2",
     "instructor": "楊尹瑄",
+    "space_available": "7",
     "schedule": "[1]5~6",
     "classroom": "耐震擴建大樓 5107",
     "remark": "西洋藝術史"
@@ -268,6 +288,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10500&amp;class_code=7%20\">公民與歷史(歷史與文化)</a>",
     "credits": "2",
     "instructor": "陳計堯",
+    "space_available": "54",
     "schedule": "[3]5~6",
     "classroom": "耐震擴建大樓 5107",
     "remark": "近代世界的形成(16-20世紀)"
@@ -281,6 +302,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10700&amp;class_code=%20%20\">公民與歷史(社會經濟史)</a>",
     "credits": "2",
     "instructor": "高淑媛",
+    "space_available": "9",
     "schedule": "[2]5~6",
     "classroom": "工科系館 41104",
     "remark": "台灣社會經濟史"
@@ -294,6 +316,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10500&amp;class_code=8%20\">公民與歷史(歷史與文化)</a>",
     "credits": "2",
     "instructor": "詹士模",
+    "space_available": "7",
     "schedule": "[5]3~4",
     "classroom": "耐震擴建大樓 5108",
     "remark": "歷史人物分析"
@@ -307,6 +330,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10600&amp;class_code=2%20\">公民與歷史(文本與歷史)</a>",
     "credits": "2",
     "instructor": "謝美娥",
+    "space_available": "1",
     "schedule": "[2]5~6",
     "classroom": "地科系館 3035",
     "remark": "影視文本與歷史,可承認為新聞傳播學程學分"
@@ -320,6 +344,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10500&amp;class_code=9%20\">公民與歷史(歷史與文化)</a>",
     "credits": "2",
     "instructor": "陳梅卿",
+    "space_available": "18",
     "schedule": "[2]3~4",
     "classroom": "耐震擴建大樓 5107",
     "remark": "日本社會文化史"
@@ -333,6 +358,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10600&amp;class_code=3%20\">公民與歷史(文本與歷史)</a>",
     "credits": "2",
     "instructor": "王健文",
+    "space_available": "4",
     "schedule": "[2]3~4",
     "classroom": "耐震擴建大樓 5117",
     "remark": "歷史知識與社會變遷"
@@ -346,6 +372,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=AG10500&amp;class_code=10\">公民與歷史(歷史與文化)</a>",
     "credits": "2",
     "instructor": "李啟彰",
+    "space_available": "5",
     "schedule": "[3]5~6",
     "classroom": "耐震擴建大樓 5108",
     "remark": "日本歷史與人物"

@@ -1,6 +1,6 @@
 [
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "101",
     "year": "1",
     "category": "大一英文",
@@ -8,12 +8,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=1%20\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "阮素菁",
+    "space_available": "3",
     "schedule": "[1]5~6 [4]1",
     "classroom": "唯農大樓 7115",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "102",
     "year": "1",
     "category": "大一英文",
@@ -21,12 +22,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=2%20\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "唐遜宜",
+    "space_available": "1",
     "schedule": "[1]5~6 [4]1",
     "classroom": "唯農大樓 7211",
     "remark": "A級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "103",
     "year": "1",
     "category": "大一英文",
@@ -34,12 +36,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=3%20\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "鍾淑玫",
+    "space_available": "1",
     "schedule": "[1]5~6 [4]1",
     "classroom": "工科系館 41101",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "104",
     "year": "1",
     "category": "大一英文",
@@ -47,12 +50,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=4%20\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "辛佳玲*",
+    "space_available": "1",
     "schedule": "[1]5~6 [4]1",
     "classroom": "唯農大樓 7113",
     "remark": "C級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "105",
     "year": "1",
     "category": "大一英文",
@@ -60,12 +64,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=5%20\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "黃妃",
+    "space_available": "3",
     "schedule": "[1]5~6 [4]1",
     "classroom": "唯農大樓 7217",
     "remark": "C級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "106",
     "year": "1",
     "category": "大一英文",
@@ -73,12 +78,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=6%20\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "葉靜怡",
+    "space_available": "2",
     "schedule": "[1]5~6 [4]1",
     "classroom": "唯農大樓 7313",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "107",
     "year": "1",
     "category": "大一英文",
@@ -86,12 +92,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=7%20\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "陳裕隆",
+    "space_available": "2",
     "schedule": "[1]5~6 [4]1",
     "classroom": "工管系館 61104",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "108",
     "year": "1",
     "category": "大一英文",
@@ -99,12 +106,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=8%20\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "許富貴",
+    "space_available": "4",
     "schedule": "[1]5~6 [4]1",
     "classroom": "耐震擴建大樓 5108",
     "remark": "A級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "109",
     "year": "1",
     "category": "大一英文",
@@ -112,12 +120,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=9%20\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "曹瑞敏",
+    "space_available": "4",
     "schedule": "[1]5~6 [4]1",
     "classroom": "唯農大樓 7213",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "110",
     "year": "1",
     "category": "大一英文",
@@ -125,12 +134,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=10\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "黃妃",
+    "space_available": "10",
     "schedule": "[2]3~4 [4]2",
     "classroom": "唯農大樓 7217",
     "remark": "C級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "111",
     "year": "1",
     "category": "大一英文",
@@ -138,12 +148,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=11\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "陳麗美",
+    "space_available": "17",
     "schedule": "[2]3~4 [4]2",
     "classroom": "唯農大樓 7108",
     "remark": "A級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "112",
     "year": "1",
     "category": "大一英文",
@@ -151,12 +162,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=12\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "阮素菁",
+    "space_available": "9",
     "schedule": "[2]3~4 [4]2",
     "classroom": "唯農大樓 7215",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "113",
     "year": "1",
     "category": "大一英文",
@@ -164,12 +176,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=13\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "呂惠雁",
+    "space_available": "9",
     "schedule": "[2]3~4 [4]2",
     "classroom": "唯農大樓 7213",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "114",
     "year": "1",
     "category": "大一英文",
@@ -177,12 +190,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=14\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "曹瑞敏",
+    "space_available": "10",
     "schedule": "[2]5~6 [5]8",
     "classroom": "唯農大樓 7113",
     "remark": "A級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "115",
     "year": "1",
     "category": "大一英文",
@@ -190,12 +204,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=15\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "陳俐文",
+    "space_available": "10",
     "schedule": "[2]5~6 [5]8",
     "classroom": "唯農大樓 7405",
     "remark": "C級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "116",
     "year": "1",
     "category": "大一英文",
@@ -203,12 +218,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=16\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "陳裕隆",
+    "space_available": "19",
     "schedule": "[2]5~6 [5]8",
     "classroom": "唯農大樓 7117",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "117",
     "year": "1",
     "category": "大一英文",
@@ -216,12 +232,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=17\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "鍾淑玫",
+    "space_available": "3",
     "schedule": "[2]5~6 [5]8",
     "classroom": "唯農大樓 7307",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "118",
     "year": "1",
     "category": "大一英文",
@@ -229,12 +246,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=18\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "陳安純",
+    "space_available": "額滿",
     "schedule": "[2]5~6 [5]8",
     "classroom": "唯農大樓 7211",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "119",
     "year": "1",
     "category": "大一英文",
@@ -242,12 +260,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=19\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "唐遜宜",
+    "space_available": "3",
     "schedule": "[3]3~4 [5]2",
     "classroom": "唯農大樓 7211",
     "remark": "A級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "120",
     "year": "1",
     "category": "大一英文",
@@ -255,12 +274,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=20\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "曹瑞敏",
+    "space_available": "24",
     "schedule": "[3]3~4 [5]2",
     "classroom": "唯農大樓 7311",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "121",
     "year": "1",
     "category": "大一英文",
@@ -268,12 +288,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=21\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "呂惠雁",
+    "space_available": "7",
     "schedule": "[3]3~4 [5]2",
     "classroom": "唯農大樓 7309",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "122",
     "year": "1",
     "category": "大一英文",
@@ -281,12 +302,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=22\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "阮素菁",
+    "space_available": "28",
     "schedule": "[3]3~4 [5]2",
     "classroom": "唯農大樓 7117",
     "remark": "A級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "123",
     "year": "1",
     "category": "大一英文",
@@ -294,12 +316,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=23\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "吳少方",
+    "space_available": "16",
     "schedule": "[3]3~4 [5]2",
     "classroom": "唯農大樓 7407",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "124",
     "year": "1",
     "category": "大一英文",
@@ -307,12 +330,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=24\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "杜佩璇",
+    "space_available": "11",
     "schedule": "[3]3~4 [5]2",
     "classroom": "唯農大樓 7217",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "125",
     "year": "1",
     "category": "大一英文",
@@ -320,12 +344,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=25\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "賴諭萱",
+    "space_available": "21",
     "schedule": "[3]3~4 [5]2",
     "classroom": "唯農大樓 7302",
     "remark": "A級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "126",
     "year": "1",
     "category": "大一英文",
@@ -333,12 +358,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=26\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "黃妃",
+    "space_available": "7",
     "schedule": "[3]3~4 [5]2",
     "classroom": "唯農大樓 7313",
     "remark": "C級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "127",
     "year": "1",
     "category": "大一英文",
@@ -346,12 +372,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=27\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "陳俐文",
+    "space_available": "19",
     "schedule": "[4]3~4 [2]1",
     "classroom": "唯農大樓 7113",
     "remark": "C級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "128",
     "year": "1",
     "category": "大一英文",
@@ -359,12 +386,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=28\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "阮素菁",
+    "space_available": "額滿",
     "schedule": "[4]3~4 [2]1",
     "classroom": "唯農大樓 7213",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "129",
     "year": "1",
     "category": "大一英文",
@@ -372,12 +400,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=29\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "黃妃",
+    "space_available": "1",
     "schedule": "[4]3~4 [2]1",
     "classroom": "唯農大樓 7211",
     "remark": "C級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "130",
     "year": "1",
     "category": "大一英文",
@@ -385,12 +414,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=30\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "鍾淑玫",
+    "space_available": "2",
     "schedule": "[4]3~4 [2]1",
     "classroom": "耐震擴建大樓 5118",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "131",
     "year": "1",
     "category": "大一英文",
@@ -398,12 +428,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=31\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "唐遜宜",
+    "space_available": "4",
     "schedule": "[4]3~4 [2]1",
     "classroom": "唯農大樓 7215",
     "remark": "A級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "132",
     "year": "1",
     "category": "大一英文",
@@ -411,12 +442,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=32\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "吳少方",
+    "space_available": "4",
     "schedule": "[4]3~4 [2]1",
     "classroom": "唯農大樓 7307",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "133",
     "year": "1",
     "category": "大一英文",
@@ -424,12 +456,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=33\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "呂惠雁",
+    "space_available": "1",
     "schedule": "[4]3~4 [2]1",
     "classroom": "唯農大樓 7115",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "134",
     "year": "1",
     "category": "大一英文",
@@ -437,12 +470,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=34\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "陳安純",
+    "space_available": "1",
     "schedule": "[4]3~4 [2]1",
     "classroom": "唯農大樓 7302",
     "remark": "A級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "135",
     "year": "1",
     "category": "大一英文",
@@ -450,12 +484,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=35\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "曹瑞敏",
+    "space_available": "4",
     "schedule": "[4]5~6 [1]8",
     "classroom": "唯農大樓 7117",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "136",
     "year": "1",
     "category": "大一英文",
@@ -463,12 +498,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=36\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "陳俐文",
+    "space_available": "21",
     "schedule": "[4]5~6 [1]8",
     "classroom": "唯農大樓 7115",
     "remark": "C級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "137",
     "year": "1",
     "category": "大一英文",
@@ -476,12 +512,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=37\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "鍾淑玫",
+    "space_available": "2",
     "schedule": "[4]5~6 [1]8",
     "classroom": "唯農大樓 7217",
     "remark": "A級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "138",
     "year": "1",
     "category": "大一英文",
@@ -489,12 +526,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=38\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "陳安純",
+    "space_available": "1",
     "schedule": "[4]5~6 [1]8",
     "classroom": "化工系館 93252",
     "remark": "A級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "139",
     "year": "1",
     "category": "大一英文",
@@ -502,12 +540,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=39\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "阮素菁",
+    "space_available": "34",
     "schedule": "[4]5~6 [1]8",
     "classroom": "唯農大樓 7405",
     "remark": "A級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "140",
     "year": "1",
     "category": "大一英文",
@@ -515,12 +554,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=40\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "陳裕隆",
+    "space_available": "1",
     "schedule": "[4]5~6 [1]8",
     "classroom": "唯農大樓 7213",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "141",
     "year": "1",
     "category": "大一英文",
@@ -528,12 +568,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=41\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "曾惠鈴",
+    "space_available": "14",
     "schedule": "[4]5~6 [1]8",
     "classroom": "唯農大樓 7403",
     "remark": "C級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "142",
     "year": "1",
     "category": "大一英文",
@@ -541,12 +582,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=42\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "柯瓊琪",
+    "space_available": "額滿",
     "schedule": "[4]5~6 [1]8",
     "classroom": "唯農大樓 7215",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "143",
     "year": "1",
     "category": "大一英文",
@@ -554,12 +596,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=43\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "陳世威",
+    "space_available": "1",
     "schedule": "[4]5~6 [1]8",
     "classroom": "唯農大樓 7307",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "144",
     "year": "1",
     "category": "大一英文",
@@ -567,12 +610,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=44\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "阮素菁",
+    "space_available": "5",
     "schedule": "[5]3~4 [2]2",
     "classroom": "唯農大樓 7113",
     "remark": "A級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "145",
     "year": "1",
     "category": "大一英文",
@@ -580,12 +624,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=45\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "唐遜宜",
+    "space_available": "額滿",
     "schedule": "[5]3~4 [2]2",
     "classroom": "唯農大樓 7309",
     "remark": "A級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "146",
     "year": "1",
     "category": "大一英文",
@@ -593,12 +638,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=46\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "鍾淑玫",
+    "space_available": "額滿",
     "schedule": "[5]3~4 [2]2",
     "classroom": "唯農大樓 7215",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "147",
     "year": "1",
     "category": "大一英文",
@@ -606,12 +652,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=47\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "黃妃",
+    "space_available": "額滿",
     "schedule": "[5]3~4 [2]2",
     "classroom": "唯農大樓 7311",
     "remark": "C級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "148",
     "year": "1",
     "category": "大一英文",
@@ -619,12 +666,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=48\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "吳少方",
+    "space_available": "8",
     "schedule": "[5]3~4 [2]2",
     "classroom": "唯農大樓 7307",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "149",
     "year": "1",
     "category": "大一英文",
@@ -632,12 +680,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=49\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "曹瑞敏",
+    "space_available": "27",
     "schedule": "[5]3~4 [2]2",
     "classroom": "唯農大樓 7213",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "150",
     "year": "1",
     "category": "大一英文",
@@ -645,12 +694,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A110320&amp;class_code=50\">英文（含口語訓練）（二）</a>",
     "credits": "1",
     "instructor": "呂惠雁",
+    "space_available": "3",
     "schedule": "[5]3~4 [2]2",
     "classroom": "唯農大樓 7302",
     "remark": "B級，屬「核心通識－國際語言」"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "301",
     "year": "2",
     "category": "大二英文",
@@ -658,12 +708,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120800&amp;class_code=1%20\">大二英文-商管英文</a>",
     "credits": "1",
     "instructor": "許富貴",
+    "space_available": "5",
     "schedule": "[1]2~3",
     "classroom": "耐震擴建大樓 5118",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "302",
     "year": "2",
     "category": "大二英文",
@@ -671,12 +722,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120400&amp;class_code=2%20\">大二英文-資訊英文</a>",
     "credits": "1",
     "instructor": "柯瓊琪",
+    "space_available": "額滿",
     "schedule": "[1]2~3",
     "classroom": "唯農大樓 7115",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "303",
     "year": "2",
     "category": "大二英文",
@@ -684,12 +736,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120900&amp;class_code=3%20\">大二英文-職場英文</a>",
     "credits": "1",
     "instructor": "曾惠鈴",
+    "space_available": "3",
     "schedule": "[1]2~3",
     "classroom": "都計系館 50202",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "304",
     "year": "2",
     "category": "大二英文",
@@ -697,12 +750,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A124700&amp;class_code=4%20\">大二英文-商業溝通英文</a>",
     "credits": "1",
     "instructor": "賴諭萱",
+    "space_available": "4",
     "schedule": "[1]2~3",
     "classroom": "唯農大樓 7113",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "305",
     "year": "2",
     "category": "大二英文",
@@ -710,12 +764,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A123500&amp;class_code=5%20\">大二英文-基礎工程英文</a>",
     "credits": "1",
     "instructor": "陳慧琴",
+    "space_available": "3",
     "schedule": "[1]2~3",
     "classroom": "唯農大樓 7215",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "306",
     "year": "2",
     "category": "大二英文",
@@ -723,12 +778,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A123600&amp;class_code=6%20\">大二英文-基礎科學英文</a>",
     "credits": "1",
     "instructor": "杜佩璇",
+    "space_available": "3",
     "schedule": "[1]2~3",
     "classroom": "唯農大樓 7302",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "307",
     "year": "2",
     "category": "大二英文",
@@ -736,12 +792,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A123700&amp;class_code=7%20\">大二英文-創意產業英文</a>",
     "credits": "1",
     "instructor": "辛佳玲",
+    "space_available": "9",
     "schedule": "[1]2~3",
     "classroom": "唯農大樓 7217",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "308",
     "year": "2",
     "category": "大二英文",
@@ -749,12 +806,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A121000&amp;class_code=8%20\">大二英文-生物科技英文</a>",
     "credits": "1",
     "instructor": "葉靜怡",
+    "space_available": "1",
     "schedule": "[1]2~3",
     "classroom": "唯農大樓 7307",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "309",
     "year": "2",
     "category": "大二英文",
@@ -762,12 +820,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A123300&amp;class_code=9%20\">大二英文-一般學術英文</a>",
     "credits": "1",
     "instructor": "陳安純",
+    "space_available": "3",
     "schedule": "[1]2~3",
     "classroom": "唯農大樓 7313",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "310",
     "year": "2",
     "category": "大二英文",
@@ -775,12 +834,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120500&amp;class_code=10\">大二英文-經貿英文</a>",
     "credits": "1",
     "instructor": "許富貴",
+    "space_available": "2",
     "schedule": "[2]7~8",
     "classroom": "唯農大樓 7313",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "311",
     "year": "2",
     "category": "大二英文",
@@ -788,12 +848,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120900&amp;class_code=11\">大二英文-職場英文</a>",
     "credits": "1",
     "instructor": "曾惠鈴",
+    "space_available": "4",
     "schedule": "[2]7~8",
     "classroom": "唯農大樓 7309",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "312",
     "year": "2",
     "category": "大二英文",
@@ -801,12 +862,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A123600&amp;class_code=12\">大二英文-基礎科學英文</a>",
     "credits": "1",
     "instructor": "賴諭萱",
+    "space_available": "額滿",
     "schedule": "[2]7~8",
     "classroom": "唯農大樓 7307",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "313",
     "year": "2",
     "category": "大二英文",
@@ -814,12 +876,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A123700&amp;class_code=13\">大二英文-創意產業英文</a>",
     "credits": "1",
     "instructor": "辛佳玲",
+    "space_available": "3",
     "schedule": "[2]7~8",
     "classroom": "唯農大樓 7217",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "314",
     "year": "2",
     "category": "大二英文",
@@ -827,12 +890,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120400&amp;class_code=14\">大二英文-資訊英文</a>",
     "credits": "1",
     "instructor": "杜佩璇",
+    "space_available": "2",
     "schedule": "[2]7~8",
     "classroom": "唯農大樓 7215",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "315",
     "year": "2",
     "category": "大二英文",
@@ -840,12 +904,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120900&amp;class_code=15\">大二英文-職場英文</a>",
     "credits": "1",
     "instructor": "葉靜怡",
+    "space_available": "2",
     "schedule": "[2]7~8",
     "classroom": "唯農大樓 7213",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "316",
     "year": "2",
     "category": "大二英文",
@@ -853,12 +918,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A124800&amp;class_code=16\">大二英文-人文醫學英文</a>",
     "credits": "1",
     "instructor": "柯瓊琪",
+    "space_available": "額滿",
     "schedule": "[2]7~8",
     "classroom": "唯農大樓 7115",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "317",
     "year": "2",
     "category": "大二英文",
@@ -866,12 +932,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120500&amp;class_code=17\">大二英文-經貿英文</a>",
     "credits": "1",
     "instructor": "許富貴",
+    "space_available": "3",
     "schedule": "[3]1~2",
     "classroom": "唯農大樓 7313",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "318",
     "year": "2",
     "category": "大二英文",
@@ -879,12 +946,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120600&amp;class_code=18\">大二英文-餐旅英文</a>",
     "credits": "1",
     "instructor": "曾惠鈴",
+    "space_available": "額滿",
     "schedule": "[3]1~2",
     "classroom": "唯農大樓 7311",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "319",
     "year": "2",
     "category": "大二英文",
@@ -892,12 +960,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120300&amp;class_code=19\">大二英文-高科技產業英文</a>",
     "credits": "1",
     "instructor": "吳少方",
+    "space_available": "29",
     "schedule": "[3]1~2",
     "classroom": "唯農大樓 7309",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "320",
     "year": "2",
     "category": "大二英文",
@@ -905,12 +974,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A121000&amp;class_code=20\">大二英文-生物科技英文</a>",
     "credits": "1",
     "instructor": "葉靜怡",
+    "space_available": "2",
     "schedule": "[3]1~2",
     "classroom": "唯農大樓 7307",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "321",
     "year": "2",
     "category": "大二英文",
@@ -918,12 +988,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A123300&amp;class_code=21\">大二英文-一般學術英文</a>",
     "credits": "1",
     "instructor": "陳安純",
+    "space_available": "2",
     "schedule": "[3]1~2",
     "classroom": "唯農大樓 7211",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "322",
     "year": "2",
     "category": "大二英文",
@@ -931,12 +1002,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A123500&amp;class_code=22\">大二英文-基礎工程英文</a>",
     "credits": "1",
     "instructor": "陳慧琴",
+    "space_available": "3",
     "schedule": "[3]5~6",
     "classroom": "唯農大樓 7113",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "323",
     "year": "2",
     "category": "大二英文",
@@ -944,12 +1016,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A124700&amp;class_code=23\">大二英文-商業溝通英文</a>",
     "credits": "1",
     "instructor": "賴諭萱",
+    "space_available": "額滿",
     "schedule": "[3]5~6",
     "classroom": "唯農大樓 7115",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "324",
     "year": "2",
     "category": "大二英文",
@@ -957,12 +1030,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A123700&amp;class_code=24\">大二英文-創意產業英文</a>",
     "credits": "1",
     "instructor": "辛佳玲",
+    "space_available": "1",
     "schedule": "[3]5~6",
     "classroom": "唯農大樓 7117",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "325",
     "year": "2",
     "category": "大二英文",
@@ -970,12 +1044,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A121000&amp;class_code=25\">大二英文-生物科技英文</a>",
     "credits": "1",
     "instructor": "葉靜怡",
+    "space_available": "1",
     "schedule": "[3]5~6",
     "classroom": "唯農大樓 7211",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "326",
     "year": "2",
     "category": "大二英文",
@@ -983,12 +1058,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A124800&amp;class_code=26\">大二英文-人文醫學英文</a>",
     "credits": "1",
     "instructor": "柯瓊琪",
+    "space_available": "額滿",
     "schedule": "[3]5~6",
     "classroom": "唯農大樓 7215",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "327",
     "year": "2",
     "category": "大二英文",
@@ -996,12 +1072,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120800&amp;class_code=27\">大二英文-商管英文</a>",
     "credits": "1",
     "instructor": "許富貴",
+    "space_available": "2",
     "schedule": "[3]7~8",
     "classroom": "唯農大樓 7313",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "328",
     "year": "2",
     "category": "大二英文",
@@ -1009,12 +1086,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120500&amp;class_code=28\">大二英文-經貿英文</a>",
     "credits": "1",
     "instructor": "陳慧琴",
+    "space_available": "額滿",
     "schedule": "[3]7~8",
     "classroom": "唯農大樓 7311",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "329",
     "year": "2",
     "category": "大二英文",
@@ -1022,12 +1100,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120600&amp;class_code=29\">大二英文-餐旅英文</a>",
     "credits": "1",
     "instructor": "曾惠鈴",
+    "space_available": "1",
     "schedule": "[3]7~8",
     "classroom": "唯農大樓 7309",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "330",
     "year": "2",
     "category": "大二英文",
@@ -1035,12 +1114,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A123500&amp;class_code=30\">大二英文-基礎工程英文</a>",
     "credits": "1",
     "instructor": "辛佳玲",
+    "space_available": "額滿",
     "schedule": "[3]7~8",
     "classroom": "唯農大樓 7307",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "331",
     "year": "2",
     "category": "大二英文",
@@ -1048,12 +1128,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A123600&amp;class_code=31\">大二英文-基礎科學英文</a>",
     "credits": "1",
     "instructor": "杜佩璇",
+    "space_available": "額滿",
     "schedule": "[3]7~8",
     "classroom": "唯農大樓 7302",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "332",
     "year": "2",
     "category": "大二英文",
@@ -1061,12 +1142,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A124800&amp;class_code=32\">大二英文-人文醫學英文</a>",
     "credits": "1",
     "instructor": "柯瓊琪",
+    "space_available": "1",
     "schedule": "[3]7~8",
     "classroom": "唯農大樓 7215",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "333",
     "year": "2",
     "category": "大二英文",
@@ -1074,12 +1156,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A123300&amp;class_code=33\">大二英文-一般學術英文</a>",
     "credits": "1",
     "instructor": "陳安純",
+    "space_available": "額滿",
     "schedule": "[3]7~8",
     "classroom": "唯農大樓 7213",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "334",
     "year": "2",
     "category": "大二英文",
@@ -1087,12 +1170,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A123300&amp;class_code=34\">大二英文-一般學術英文</a>",
     "credits": "1",
     "instructor": "陳安純",
+    "space_available": "2",
     "schedule": "[4]1~2",
     "classroom": "唯農大樓 7311",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "335",
     "year": "2",
     "category": "大二英文",
@@ -1100,12 +1184,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A123600&amp;class_code=35\">大二英文-基礎科學英文</a>",
     "credits": "1",
     "instructor": "賴諭萱",
+    "space_available": "4",
     "schedule": "[4]1~2",
     "classroom": "唯農大樓 7302",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "336",
     "year": "2",
     "category": "大二英文",
@@ -1113,12 +1198,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120400&amp;class_code=36\">大二英文-資訊英文</a>",
     "credits": "1",
     "instructor": "杜佩璇",
+    "space_available": "11",
     "schedule": "[4]1~2",
     "classroom": "唯農大樓 7307",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "337",
     "year": "2",
     "category": "大二英文",
@@ -1126,12 +1212,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A124800&amp;class_code=37\">大二英文-人文醫學英文</a>",
     "credits": "1",
     "instructor": "柯瓊琪",
+    "space_available": "額滿",
     "schedule": "[4]1~2",
     "classroom": "唯農大樓 7117",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "338",
     "year": "2",
     "category": "大二英文",
@@ -1139,12 +1226,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120800&amp;class_code=38\">大二英文-商管英文</a>",
     "credits": "1",
     "instructor": "許富貴",
+    "space_available": "3",
     "schedule": "[4]7~8",
     "classroom": "唯農大樓 7211",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "339",
     "year": "2",
     "category": "大二英文",
@@ -1152,12 +1240,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A123700&amp;class_code=39\">大二英文-創意產業英文</a>",
     "credits": "1",
     "instructor": "辛佳玲",
+    "space_available": "5",
     "schedule": "[4]7~8",
     "classroom": "唯農大樓 7213",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "340",
     "year": "2",
     "category": "大二英文",
@@ -1165,12 +1254,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120900&amp;class_code=40\">大二英文-職場英文</a>",
     "credits": "1",
     "instructor": "曾惠鈴",
+    "space_available": "2",
     "schedule": "[4]7~8",
     "classroom": "唯農大樓 7403",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "341",
     "year": "2",
     "category": "大二英文",
@@ -1178,12 +1268,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A124700&amp;class_code=41\">大二英文-商業溝通英文</a>",
     "credits": "1",
     "instructor": "賴諭萱",
+    "space_available": "2",
     "schedule": "[4]7~8",
     "classroom": "唯農大樓 7217",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "342",
     "year": "2",
     "category": "大二英文",
@@ -1191,12 +1282,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120300&amp;class_code=42\">大二英文-高科技產業英文</a>",
     "credits": "1",
     "instructor": "吳少方",
+    "space_available": "12",
     "schedule": "[4]7~8",
     "classroom": "唯農大樓 7302",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "343",
     "year": "2",
     "category": "大二英文",
@@ -1204,12 +1296,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120400&amp;class_code=43\">大二英文-資訊英文</a>",
     "credits": "1",
     "instructor": "杜佩璇",
+    "space_available": "2",
     "schedule": "[4]7~8",
     "classroom": "唯農大樓 7307",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "344",
     "year": "2",
     "category": "大二英文",
@@ -1217,12 +1310,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120900&amp;class_code=44\">大二英文-職場英文</a>",
     "credits": "1",
     "instructor": "葉靜怡",
+    "space_available": "額滿",
     "schedule": "[4]7~8",
     "classroom": "唯農大樓 7311",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "345",
     "year": "2",
     "category": "大二英文",
@@ -1230,12 +1324,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120800&amp;class_code=45\">大二英文-商管英文</a>",
     "credits": "1",
     "instructor": "許富貴",
+    "space_available": "1",
     "schedule": "[5]5~6",
     "classroom": "唯農大樓 7113",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "346",
     "year": "2",
     "category": "大二英文",
@@ -1243,12 +1338,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A123500&amp;class_code=46\">大二英文-基礎工程英文</a>",
     "credits": "1",
     "instructor": "辛佳玲",
+    "space_available": "1",
     "schedule": "[5]5~6",
     "classroom": "唯農大樓 7115",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "347",
     "year": "2",
     "category": "大二英文",
@@ -1256,12 +1352,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120600&amp;class_code=47\">大二英文-餐旅英文</a>",
     "credits": "1",
     "instructor": "曾惠鈴",
+    "space_available": "額滿",
     "schedule": "[5]5~6",
     "classroom": "唯農大樓 7117",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "348",
     "year": "2",
     "category": "大二英文",
@@ -1269,12 +1366,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A123600&amp;class_code=48\">大二英文-基礎科學英文</a>",
     "credits": "1",
     "instructor": "杜佩璇 賴諭萱*",
+    "space_available": "1",
     "schedule": "[5]5~6",
     "classroom": "唯農大樓 7211",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "349",
     "year": "2",
     "category": "大二英文",
@@ -1282,12 +1380,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A120400&amp;class_code=49\">大二英文-資訊英文</a>",
     "credits": "1",
     "instructor": "柯瓊琪",
+    "space_available": "額滿",
     "schedule": "[5]5~6",
     "classroom": "唯農大樓 7213",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "350",
     "year": "2",
     "category": "大二英文",
@@ -1295,12 +1394,13 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A121000&amp;class_code=50\">大二英文-生物科技英文</a>",
     "credits": "1",
     "instructor": "葉靜怡",
+    "space_available": "1",
     "schedule": "[5]5~6",
     "classroom": "唯農大樓 7309",
     "remark": "建議選修與本科系相關英文課程；已修習及格相同名稱之科目不得重選"
   },
   {
-    "institute_code": "A1",
+    "institute_code": false,
     "serial_number": "701",
     "year": "",
     "category": "國際語言",
@@ -1308,6 +1408,7 @@
     "course_name": "<a target=\"_blank\" href=\"http://class-qry.acad.ncku.edu.tw/syllabus/syllabus.php?syear=0103&amp;sem=2&amp;co_no=A130200&amp;class_code=1%20\">線上補強英文</a>",
     "credits": "0",
     "instructor": "吳少方*杜佩璇 賴諭萱 辛佳玲",
+    "space_available": "246",
     "schedule": "未定",
     "classroom": "",
     "remark": "請先網路選課，2/25日~3/20日持英檢成績單至成鷹辦公室審核，曾修過的也要審"

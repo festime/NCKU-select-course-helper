@@ -83,22 +83,22 @@ class CoursesController < ApplicationController
         handle_schedule!(schedule)
       end
 
-      id_of_satisfied_courses = []
+      id_of_available_courses = []
       schedules.each_with_index do |schedule, index|
         schedule.each do |day, array_of_time|
-          check = true
+          valid = true
           array_of_time.each do |time|
             if !params[:freetime][day].include? time
-              check = false
+              valid = false
               break
             end
           end
 
-          id_of_satisfied_courses << collection_of_id[index] if check
+          id_of_available_courses << collection_of_id[index] if valid
         end
       end
 
-      return model.find(id_of_satisfied_courses)
+      return model.find(id_of_available_courses)
     end
 
     return []

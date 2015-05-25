@@ -5,7 +5,6 @@ class SessionsController < ApplicationController
 
   def create
     session[:user] = params[:department] + " " + params[:grade]
-    binding.pry
     redirect_to front_path
   end
 
