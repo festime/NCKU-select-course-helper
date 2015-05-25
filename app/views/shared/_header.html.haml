@@ -6,16 +6,16 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand{:href => "#"} 成大選課小幫手
+      = link_to "成大選課小幫手", root_path, class: "navbar-brand"
     .navbar-collapse.collapse
       %ul.nav.navbar-nav.navbar-left
         %li
-          = link_to "清除系級設定", "#"
+          = link_to "清除系級設定", clear_setting_path, method: :delete
       %ul.nav.navbar-nav.navbar-right
         %li
-          = link_to "回報問題"
+          = link_to "回報問題", "#"
         %li
-          = link_to "關於本站"
+          = link_to "關於本站", "#"
         %li
-          = link_to "關於作者"
+          = link_to "關於作者", "#"
     / /.nav-collapse

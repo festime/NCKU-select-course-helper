@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
+  root 'pages#landing_page'
+
   get 'front', to: 'courses#front'
   post 'search', to: 'courses#search'
+
+  get 'setting', to: 'sessions#new'
+  post 'setting', to: 'sessions#create'
+  delete 'clear_setting', to: 'sessions#destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
