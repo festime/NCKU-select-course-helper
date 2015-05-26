@@ -120,20 +120,4 @@ module ApplicationHelper
 
     result
   end
-
-  def user_has_class?(obligatory_courses, day, number)
-    hash = {
-      "monday" => '1',
-      "tuesday" => '2',
-      "wednesday" => '3',
-      "thursday" => '4',
-      "friday" => '5'
-    }
-
-    day = hash[day]
-
-    #obligatory_courses.each do |course|
-      #course.schedule =~ /\[#{day}\]/
-    #end
-  end
 end

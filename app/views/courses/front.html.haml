@@ -1,5 +1,5 @@
 .container
-  .col-md-3
+  .col-md-6
     .table-responsive
       %table.table.table-bordered
         %thead
@@ -13,11 +13,13 @@
         %tbody
           - ["1", "2", "3", "4", "N", "5", "6", "7", "8", "9"].each do |number|
             %tr.valid-td{:value => number}
-              %td= number
+              %td.col-md-2= number
               - ["monday", "tuesday", "wednesday", "thursday", "friday"].each do |day|
-                %td{:class => "#{day}"}
+                %td{:class => "#{day} col-md-2"}
                 -#%td{:class => "#{day} #{'danger' if user_has_class?(number, day)}"}
   .col-md-6
+    %h3 目前的必修課
+    %hr
     = form_tag search_path do
       .form-group
         %h3 核心通識
@@ -106,3 +108,5 @@
                           %td= (value ? "是" : "否")
                         - else
                           %td= value
+= javascript_tag do
+  window.obligatory_courses = #{@obligatory_courses.to_json.html_safe}

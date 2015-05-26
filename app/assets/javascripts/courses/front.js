@@ -1,9 +1,29 @@
 $(document).ready(function() {
+  var i;
+
+  for (i = 0 ; i < obligatory_courses.length ; ++i) {
+    // $('tr[value="5"]');
+    var course_name = obligatory_courses[i]["course_name"];
+    var schedule = obligatory_courses[i]["schedule"];
+    Object.keys(schedule).forEach(function(day) {
+      for (var j = 0 ; j < schedule[day].length ; ++j) {
+        var course_time_index = schedule[day][j];
+        var target_cell = $('tr[value='+course_time_index+'] td:nth-child('+day+')').next();
+        target_cell.addClass('danger');
+        target_cell.text($(course_name).html());
+      }
+    });
+  }
+
   $('.valid-td').on('click', '*:not(:first-child)', function() {
     if ($(this).hasClass('success')) {
       $(this).removeClass('success');
       $(this).attr('value', null);
       $(this).trigger('update-hidden-form-value');
+    }
+    else if ($(this).hasClass('danger')) {
+      $(this).removeClass('danger');
+      $(this).text('');
     }
     else if (!$(this).hasClass('danger')) {
       $(this).addClass('success');
@@ -17,8 +37,6 @@ $(document).ready(function() {
     var target_id = $(this).attr("class").split(" ")[0];
     var column_index = $(this).parent().children().index($(this));
 
-    //alert(target_id);
-    //alert(typeof(column_index));
     switch(column_index) {
       case 1:
         free_time_cells = $('.monday.success');
