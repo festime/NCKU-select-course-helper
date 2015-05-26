@@ -1,6 +1,6 @@
-class CreateCitizenshipHistories < ActiveRecord::Migration
+class CreateCourses < ActiveRecord::Migration
   def change
-    create_table :citizenship_histories do |t|
+    create_table :courses do |t|
       t.string :institute_code
       t.string :serial_number
       t.string :year

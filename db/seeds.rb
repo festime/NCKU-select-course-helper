@@ -8,7 +8,11 @@
 
 require 'json'
 
-Dir.glob(Rails.root + "lib/courses_data/103_2/*.json").each do |filename|
+current_term_hash = JSON.parse(File.open(Rails.root + "lib/courses_data/current_term.json").read)
+current_academic_year = current_term_hash["academic_year"]
+current_semester = current_term_hash["semester"]
+
+Dir.glob(Rails.root + "lib/courses_data/#{current_academic_year}_#{current_semester}/*.json").each do |filename|
   json = File.open(filename).read
   courses = JSON.parse(json)
 
@@ -21,5 +25,7 @@ Dir.glob(Rails.root + "lib/courses_data/103_2/*.json").each do |filename|
       courses.each { |course| GeneralEducation.create(course) }
     when /international_language/
       courses.each { |course| InternationalLanguage.create(course) }
+    when /courses/
+      courses.each { |course| Course.create(course) }
   end
 end

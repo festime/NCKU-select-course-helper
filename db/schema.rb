@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150507061712) do
+ActiveRecord::Schema.define(version: 20150526001645) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20150507061712) do
     t.string  "course_name"
     t.integer "credits"
     t.string  "instructor"
+    t.string  "space_available"
     t.string  "schedule"
     t.string  "classroom"
     t.string  "remark"
@@ -39,10 +40,28 @@ ActiveRecord::Schema.define(version: 20150507061712) do
     t.string  "course_name"
     t.integer "credits"
     t.string  "instructor"
+    t.string  "space_available"
     t.string  "schedule"
     t.string  "classroom"
     t.string  "remark"
   end
+
+  create_table "courses", force: :cascade do |t|
+    t.string  "institute_code"
+    t.string  "serial_number"
+    t.string  "year"
+    t.string  "category"
+    t.boolean "taught_in_english"
+    t.string  "course_name"
+    t.integer "credits"
+    t.string  "instructor"
+    t.string  "space_available"
+    t.string  "schedule"
+    t.string  "classroom"
+    t.string  "remark"
+  end
+
+  add_index "courses", ["institute_code"], name: "index_courses_on_institute_code", using: :btree
 
   create_table "general_educations", force: :cascade do |t|
     t.string  "institute_code"
@@ -53,6 +72,7 @@ ActiveRecord::Schema.define(version: 20150507061712) do
     t.string  "course_name"
     t.integer "credits"
     t.string  "instructor"
+    t.string  "space_available"
     t.string  "schedule"
     t.string  "classroom"
     t.string  "remark"
@@ -67,6 +87,7 @@ ActiveRecord::Schema.define(version: 20150507061712) do
     t.string  "course_name"
     t.integer "credits"
     t.string  "instructor"
+    t.string  "space_available"
     t.string  "schedule"
     t.string  "classroom"
     t.string  "remark"

@@ -9,6 +9,7 @@ class CreateGeneralEducations < ActiveRecord::Migration
       t.string :course_name
       t.integer :credits
       t.string :instructor
+      t.string :space_available
       t.string :schedule
       t.string :classroom
       t.string :remark
