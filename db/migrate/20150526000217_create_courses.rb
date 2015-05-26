@@ -7,6 +7,7 @@ class CreateCourses < ActiveRecord::Migration
       t.string :category
       t.boolean :taught_in_english
       t.string :course_name
+      t.string :elective_or_required
       t.integer :credits
       t.string :instructor
       t.string :space_available

@@ -1,8 +1,15 @@
 class CoursesController < ApplicationController
-
+  before_action :require_setting
 
 
   def front
+    @obligatory_courses = Course.where(
+      institute_code: session[:user].split(' ').first,
+      year: session[:user].split(' ').last
+    ).map do |course|
+      {course_name: course.course_name, schedule: course.schedule}
+    end
+    binding.pry
   end
 
   def search
@@ -19,10 +26,13 @@ class CoursesController < ApplicationController
     end
 
     render :front
-    #redirect_to front_path
   end
 
   private
+
+  def require_setting
+    redirect_to setting_path unless session[:user]
+  end
 
   def handle_schedule!(schedule)
     result = {}

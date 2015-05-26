@@ -11,11 +11,12 @@
             %th 四
             %th 五
         %tbody
-          - [1, 2, 3, 4, "N", 5, 6, 7, 8, 9].each do |number|
+          - ["1", "2", "3", "4", "N", "5", "6", "7", "8", "9"].each do |number|
             %tr.valid-td{:value => number}
               %td= number
               - ["monday", "tuesday", "wednesday", "thursday", "friday"].each do |day|
                 %td{:class => "#{day}"}
+                -#%td{:class => "#{day} #{'danger' if user_has_class?(number, day)}"}
   .col-md-6
     = form_tag search_path do
       .form-group
@@ -89,6 +90,8 @@
                   %th 課程名稱
                   %th 學分
                   %th 教師姓名
+                  %th 已選課人數
+                  %th 餘額
                   %th 時間
                   %th 教室
                   %th 備註

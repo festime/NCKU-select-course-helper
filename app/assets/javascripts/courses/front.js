@@ -5,7 +5,7 @@ $(document).ready(function() {
       $(this).attr('value', null);
       $(this).trigger('update-hidden-form-value');
     }
-    else {
+    else if (!$(this).hasClass('danger')) {
       $(this).addClass('success');
       $(this).attr('value', $(this).parent().attr('value'));
       $(this).trigger('update-hidden-form-value');
