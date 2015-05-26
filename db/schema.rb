@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 20150526001645) do
   create_table "courses", force: :cascade do |t|
     t.string  "institute_code"
     t.string  "serial_number"
+    t.string  "class_name"
     t.string  "year"
     t.string  "category"
     t.boolean "taught_in_english"

@@ -11,6 +11,7 @@ class CoursesController < ApplicationController
     ).map do |course|
       {course_name: course.course_name, schedule: handle_schedule!(course.schedule)}
     end
+    binding.pry
   end
 
   def search
