@@ -5,13 +5,13 @@ class CoursesController < ApplicationController
 
   def front
     @obligatory_courses = Course.where(
-      institute_code: session[:user].split(' ').first,
-      year: session[:user].split(' ').last,
+      institute_code: session[:user].split(' ')[0],
+      year: session[:user].split(' ')[1],
+      class_name: session[:user].split(' ')[2],
       elective_or_required: "必修"
     ).map do |course|
       {course_name: course.course_name, schedule: handle_schedule!(course.schedule)}
     end
-    binding.pry
   end
 
   def search

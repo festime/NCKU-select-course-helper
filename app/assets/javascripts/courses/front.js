@@ -1,6 +1,10 @@
 $(document).ready(function() {
   var i;
 
+  if (typeof obligatory_courses === 'undefined') {
+    obligatory_courses = [];
+  }
+
   for (i = 0 ; i < obligatory_courses.length ; ++i) {
     // $('tr[value="5"]');
     var course_name = obligatory_courses[i]["course_name"];
@@ -37,7 +41,7 @@ $(document).ready(function() {
     var target_id = $(this).attr("class").split(" ")[0];
     var column_index = $(this).parent().children().index($(this));
 
-    switch(column_index) {
+    switch (column_index) {
       case 1:
         free_time_cells = $('.monday.success');
         break;
