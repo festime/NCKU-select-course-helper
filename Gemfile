@@ -35,6 +35,8 @@ gem 'bcrypt'
 gem 'puma'
 gem 'haml-rails'
 gem 'bootstrap-sass', '~> 3.3.4'
+gem 'mechanize'
+gem 'figaro'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   post 'setting', to: 'sessions#create'
   delete 'clear_setting', to: 'sessions#destroy'
 
+  get 'update_courses', to: 'update_courses#new'
+  post 'update_courses', to: 'update_courses#create'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

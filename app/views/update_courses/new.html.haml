@@ -1,0 +1,6 @@
+.container
+  .col-md-3
+    = form_tag update_courses_path do
+      .form-group
+        = password_field_tag :password, nil, placeholder: 'password', class: 'form-control'
+      = submit_tag '確認', class: 'btn btn-primary'
