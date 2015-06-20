@@ -7,8 +7,9 @@ class CoursesController < ApplicationController
     @obligatory_courses = Course.where(
       institute_code: session[:user].split(' ')[0],
       year: session[:user].split(' ')[1],
-      class_name: session[:user].split(' ')[2],
       elective_or_required: "必修"
+    ).where(
+      'class_name LIKE ?', "%#{session[:user].split(' ')[2]}%"
     ).map do |course|
       {course_name: course.course_name, schedule: handle_schedule!(course.schedule)}
     end

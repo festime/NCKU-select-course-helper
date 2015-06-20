@@ -42,15 +42,17 @@ class CourseUpdate
       '經濟系',
       '心理系',
       '電機系',
-      '資訊系',
+      'CSIE',
       '建築系',
       '都計系',
       '工設系',
       '生科系'
     ]
+    courses = []
+    agent = Mechanize.new
+    agent.ignore_bad_chunking = true
 
     departments.each do |department|
-      agent = Mechanize.new
       page = agent.get('http://course-query.acad.ncku.edu.tw/qry/index.php?lang=zh_tw')
       department_courses_page = agent.page.links.find { |link| link.text.include? department }.click
 
@@ -90,6 +92,16 @@ class CourseUpdate
             courses << course
           end
         end
+      end
+      puts courses.count
+    end
+
+    ActiveRecord::Base.transaction do
+      begin
+        Course.delete_all
+        courses.each { |course| Course.create(course) }
+      rescue => e
+        p e.message
       end
     end
   end
