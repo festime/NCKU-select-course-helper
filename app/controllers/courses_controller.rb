@@ -1,18 +1,10 @@
 class CoursesController < ApplicationController
   before_action :require_setting
+  before_action :set_obligatory_courses
 
 
 
   def front
-    @obligatory_courses = Course.where(
-      institute_code: session[:user].split(' ')[0],
-      year: session[:user].split(' ')[1],
-      elective_or_required: "必修"
-    ).where(
-      'class_name LIKE ?', "%#{session[:user].split(' ')[2]}%"
-    ).map do |course|
-      {course_name: course.course_name, schedule: handle_schedule!(course.schedule)}
-    end
   end
 
   def search
@@ -35,6 +27,18 @@ class CoursesController < ApplicationController
 
   def require_setting
     redirect_to setting_path unless session[:user]
+  end
+
+  def set_obligatory_courses
+    @obligatory_courses = Course.where(
+      institute_code: session[:user].split(' ')[0],
+      year: session[:user].split(' ')[1],
+      elective_or_required: "必修"
+    ).where(
+      'class_name LIKE ?', "%#{session[:user].split(' ')[2]}%"
+    ).map do |course|
+      {course_name: course.course_name, schedule: handle_schedule!(course.schedule)}
+    end
   end
 
   def handle_schedule!(schedule)
