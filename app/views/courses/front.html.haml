@@ -19,12 +19,24 @@
                 -#%td{:class => "#{day} #{'danger' if user_has_class?(number, day)}"}
   .col-md-6
     .form-group
-      %h3 目前的必修課
-      - @obligatory_courses.each do |obligatory_course|
-        .checkbox
-          %label
-            = check_box_tag('')
-            = obligatory_course[:course_name].html_safe
+      %h3= "目前必修課(#{@obligatory_courses.map {|course| course[:credits]}.sum}學分)"
+      %table.table.table-striped
+        %thead
+          %tr
+            %th 課名
+            %th 學分數
+            %th 上課地點
+        %tbody
+          - @obligatory_courses.each do |obligatory_course|
+            %tr
+              %td.col-md-1= obligatory_course[:course_name].html_safe
+              %td.col-md-1= obligatory_course[:credits]
+              %td.col-md-1= obligatory_course[:classroom]
+      -#- @obligatory_courses.each do |obligatory_course|
+        -#%div
+          -#%label
+            -#= obligatory_course[:course_name].html_safe
+          -#= obligatory_course[:credits]
     %hr
     = form_tag search_path do
       .form-group

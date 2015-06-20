@@ -31,13 +31,23 @@ class CoursesController < ApplicationController
 
   def set_obligatory_courses
     @obligatory_courses = Course.where(
-      institute_code: session[:user].split(' ')[0],
-      year: session[:user].split(' ')[1],
-      elective_or_required: "必修"
-    ).where(
-      'class_name LIKE ?', "%#{session[:user].split(' ')[2]}%"
+      "institute_code LIKE ? AND year LIKE ? AND
+       elective_or_required LIKE ? AND class_name LIKE ?",
+      session[:user].split(' ')[0],
+      session[:user].split(' ')[1],
+      "必%",
+      "%#{session[:user].split(' ')[2]}%"
     ).map do |course|
-      {course_name: course.course_name, schedule: handle_schedule!(course.schedule)}
+      {
+        course_name: course.course_name,
+        schedule: handle_schedule!(course.schedule),
+        credits: course.credits,
+        classroom: course.classroom
+      }
+    end
+
+    @obligatory_courses.delete_if do |course|
+      course[:course_name] =~ /通識課程|歷史|基礎國文（一）|基礎國文（二）|英文（含口語訓練）|哲學與藝術|體育（三）|體育（四）|服務學習（三）/
     end
   end
 
