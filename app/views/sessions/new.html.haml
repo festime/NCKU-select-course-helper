@@ -8,9 +8,5 @@
         = label_tag :grade, "年級"
         = select_tag(:grade, options_for_select((1..4).map {|number| [number.to_s, number]}), class: "form-control")
       .form-group.two-classes-options
-        = label_tag :class_name, "班別"
-        = select_tag(:class_name, options_for_select([['甲', '甲'], ['乙', '乙']]), class: "form-control")
       .form-group.three-classes-options
-        = label_tag :class_name, "班別"
-        = select_tag(:class_name, options_for_select([['甲', '甲'], ['乙', '乙'], ['丙', '丙']]), class: "form-control")
       = submit_tag "確認", class: "btn btn-primary btn-lg"

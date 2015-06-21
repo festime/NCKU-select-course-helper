@@ -63,7 +63,7 @@ class CoursesController < ApplicationController
     end
 
     @obligatory_courses.delete_if do |course|
-      course[:course_name] =~ /通識課程|歷史|基礎國文（一）|基礎國文（二）|英文（含口語訓練）|哲學與藝術|體育（三）|體育（四）|服務學習（三）/
+      course[:course_name] =~ /通識課程|歷史|基礎國文（一）|基礎國文（二）|英文（含口語訓練）|哲學與藝術|體育（三）|體育（四）|服務學習（三）|公民/
     end
   end
 
