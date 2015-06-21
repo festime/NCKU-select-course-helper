@@ -19,6 +19,20 @@ class CoursesController < ApplicationController
       result = available_general_education_classes(:cross, type)
       @courses[type] = result
     end
+    params[:elective].to_enum.with_index(1) do |array, year|
+      type = array.first.to_sym
+
+      if array.last.present?
+        result = Course.where(
+          "year LIKE ? AND elective_or_required LIKE ? AND
+           institute_code LIKE ?",
+          year.to_s,
+          "選修",
+          session[:user].split(' ')[0]
+        )
+        @courses[type] = result
+      end
+    end
 
     render :front
   end
@@ -39,8 +53,10 @@ class CoursesController < ApplicationController
       "%#{session[:user].split(' ')[2]}%"
     ).map do |course|
       {
+        id: course.id,
         course_name: course.course_name,
         schedule: handle_schedule!(course.schedule),
+        instructor: course.instructor,
         credits: course.credits,
         classroom: course.classroom
       }

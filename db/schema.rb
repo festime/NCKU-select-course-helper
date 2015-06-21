@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150526001645) do
+ActiveRecord::Schema.define(version: 20150621020208) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(version: 20150526001645) do
     t.string  "schedule"
     t.string  "classroom"
     t.string  "remark"
+    t.string  "class_name"
+    t.string  "elective_or_required"
   end
 
   create_table "citizenship_histories", force: :cascade do |t|
@@ -46,6 +48,8 @@ ActiveRecord::Schema.define(version: 20150526001645) do
     t.string  "schedule"
     t.string  "classroom"
     t.string  "remark"
+    t.string  "class_name"
+    t.string  "elective_or_required"
   end
 
   create_table "courses", force: :cascade do |t|
@@ -63,6 +67,7 @@ ActiveRecord::Schema.define(version: 20150526001645) do
     t.string  "schedule"
     t.string  "classroom"
     t.string  "remark"
+    t.string  "selected"
   end
 
   add_index "courses", ["institute_code"], name: "index_courses_on_institute_code", using: :btree
@@ -81,6 +86,8 @@ ActiveRecord::Schema.define(version: 20150526001645) do
     t.string  "schedule"
     t.string  "classroom"
     t.string  "remark"
+    t.string  "class_name"
+    t.string  "elective_or_required"
   end
 
   create_table "international_languages", force: :cascade do |t|
@@ -97,6 +104,8 @@ ActiveRecord::Schema.define(version: 20150526001645) do
     t.string  "schedule"
     t.string  "classroom"
     t.string  "remark"
+    t.string  "class_name"
+    t.string  "elective_or_required"
   end
 
 end

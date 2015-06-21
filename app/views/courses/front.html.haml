@@ -25,12 +25,16 @@
           %tr
             %th 課名
             %th 學分數
+            %th 教師姓名
+            %th 上課時間
             %th 上課地點
         %tbody
           - @obligatory_courses.each do |obligatory_course|
             %tr
               %td.col-md-1= obligatory_course[:course_name].html_safe
               %td.col-md-1= obligatory_course[:credits]
+              %td.col-md-1= obligatory_course[:instructor]
+              %td.col-md-1= better_schedule_text(Course.find(obligatory_course[:id])[:schedule])
               %td.col-md-1= obligatory_course[:classroom]
       -#- @obligatory_courses.each do |obligatory_course|
         -#%div
@@ -39,6 +43,25 @@
           -#= obligatory_course[:credits]
     %hr
     = form_tag search_path do
+      .form-group
+        %h3 系上專業選修課
+        .checkbox
+          %label
+            = hidden_field_tag('elective[freshman]', nil)
+            = check_box_tag('elective[freshman]')
+            大一
+          %label
+            = hidden_field_tag('elective[sophomore]', nil)
+            = check_box_tag('elective[sophomore]')
+            大二
+          %label
+            = hidden_field_tag('elective[junior]', nil)
+            = check_box_tag('elective[junior]')
+            大三
+          %label
+            = hidden_field_tag('elective[senior]', nil)
+            = check_box_tag('elective[senior]')
+            大四
       .form-group
         %h3 核心通識
         .checkbox
@@ -104,10 +127,12 @@
                 %tr
                   %th 系號
                   %th 序號
+                  %th 班別
                   %th 年級
                   %th 類別
                   %th 英語授課
                   %th 課程名稱
+                  %th 必選修
                   %th 學分
                   %th 教師姓名
                   %th 已選課人數
@@ -118,13 +143,15 @@
               %tbody
                 - array_of_courses.each do |course|
                   %tr
-                    - course.attributes.each do |key, value|
-                      - if key != "id"
-                        - if key == "course_name"
-                          %td= value.html_safe
-                        - elsif key == "taught_in_english"
-                          %td= (value ? "是" : "否")
+                    - course_column_names.each do |column_name|
+                      - if column_name != "id"
+                        - if column_name == "course_name"
+                          %td= course[column_name].html_safe
+                        - elsif column_name == "taught_in_english"
+                          %td= (course[column_name] ? "是" : "否")
+                        - elsif column_name == "schedule"
+                          %td= better_schedule_text(course[column_name])
                         - else
-                          %td= value
+                          %td= course[column_name]
 = javascript_tag do
   window.obligatory_courses = #{@obligatory_courses.to_json.html_safe}

@@ -10,7 +10,11 @@ module ApplicationHelper
       life_science_health: "生命科學與健康",
       science_engineering: "自然與工程科學",
       social_science: "社會科學",
-      integrated: "科際整合"
+      integrated: "科際整合",
+      freshman: "大一選修",
+      sophomore: "大二選修",
+      junior:  "大三選修",
+      senior:  "大四選修"
     }
     hash[type]
   end
@@ -119,5 +123,18 @@ module ApplicationHelper
     end
 
     result
+  end
+
+  def course_column_names
+    [
+      "id", "institute_code", "serial_number", "class_name", "year",
+      "category", "taught_in_english", "course_name", "elective_or_required",
+      "credits", "instructor","selected", "space_available", "schedule",
+      "classroom", "remark"
+    ]
+  end
+
+  def better_schedule_text(schedule)
+    schedule.insert(schedule.rindex('['), ' ')
   end
 end
