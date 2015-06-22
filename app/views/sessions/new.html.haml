@@ -2,8 +2,8 @@
   .col-md-3
     = form_tag setting_path do
       .form-group
-        = label_tag :department, "系"
-        = select_tag(:department, grouped_options_for_select(options_of_departments), class: "form-control")
+        = label_tag :institute_code, "系"
+        = select_tag(:institute_code, grouped_options_for_select(options_of_departments), class: "form-control")
       .form-group
         = label_tag :grade, "年級"
         = select_tag(:grade, options_for_select((1..4).map {|number| [number.to_s, number]}), class: "form-control")

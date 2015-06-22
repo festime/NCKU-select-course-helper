@@ -14,7 +14,8 @@ module ApplicationHelper
       freshman: "大一選修",
       sophomore: "大二選修",
       junior:  "大三選修",
-      senior:  "大四選修"
+      senior:  "大四選修",
+      elective: "選修專業課"
     }
     hash[type]
   end

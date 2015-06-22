@@ -19,20 +19,7 @@ class CoursesController < ApplicationController
       result = available_general_education_classes(:cross, type)
       @courses[type] = result
     end
-    params[:elective].to_enum.with_index(1) do |array, year|
-      type = array.first.to_sym
-
-      if array.last.present?
-        result = Course.where(
-          "year LIKE ? AND elective_or_required LIKE ? AND
-           institute_code LIKE ?",
-          year.to_s,
-          "選修",
-          session[:user].split(' ')[0]
-        )
-        @courses[type] = result
-      end
-    end
+    @courses[:elective] = available_elective_classes
 
     render :front
   end
@@ -40,17 +27,19 @@ class CoursesController < ApplicationController
   private
 
   def require_setting
-    redirect_to setting_path unless session[:user]
+    if session[:institute_code].nil? || session[:grade].nil?
+      redirect_to setting_path
+    end
   end
 
   def set_obligatory_courses
     @obligatory_courses = Course.where(
       "institute_code LIKE ? AND year LIKE ? AND
        elective_or_required LIKE ? AND class_name LIKE ?",
-      session[:user].split(' ')[0],
-      session[:user].split(' ')[1],
+      institute_code_of_current_user,
+      session[:grade],
       "必%",
-      "%#{session[:user].split(' ')[2]}%"
+      "%#{session[:class_name]}%"
     ).map do |course|
       {
         id: course.id,
@@ -63,7 +52,9 @@ class CoursesController < ApplicationController
     end
 
     @obligatory_courses.delete_if do |course|
-      course[:course_name] =~ /通識課程|歷史|基礎國文（一）|基礎國文（二）|英文（含口語訓練）|哲學與藝術|體育（三）|體育（四）|服務學習（三）|公民/
+      course[:course_name] =~ /通識課程|歷史|基礎國文（一）|基礎國文（二）/ ||
+      course[:course_name] =~ /英文（含口語訓練）|哲學與藝術|體育（三）/ ||
+      course[:course_name] =~ /體育（四）|服務學習（三）|公民/
     end
   end
 
@@ -125,7 +116,6 @@ class CoursesController < ApplicationController
       schedules = model.where(category: search_term).pluck(:schedule).collect do |schedule|
         handle_schedule!(schedule)
       end
-      #schedules = handle_schedules!()
 
       id_of_available_courses = []
       schedules.each_with_index do |schedule, index|
@@ -146,5 +136,55 @@ class CoursesController < ApplicationController
     end
 
     return []
+  end
+
+  def available_elective_classes
+    result = []
+
+    params[:elective].to_enum.with_index(1) do |array, year|
+      checkbox_value = array[1]
+
+      if checkbox_value.present?
+        ids_of_courses = Course.where(
+          "year LIKE ? AND elective_or_required LIKE ? AND
+           institute_code LIKE ?",
+          year.to_s,
+          "選修",
+          institute_code_of_current_user
+        ).pluck(:id)
+        schedules_of_courses = Course.where(
+          "year LIKE ? AND elective_or_required LIKE ? AND
+           institute_code LIKE ?",
+          year.to_s,
+          "選修",
+          institute_code_of_current_user
+        ).pluck(:schedule).collect do |schedule|
+          handle_schedule!(schedule)
+        end
+
+        id_of_available_courses = []
+        schedules_of_courses.each_with_index do |course_schedule, index|
+          valid = true
+          course_schedule.each do |day, array_of_time|
+            array_of_time.each do |time|
+              if !params[:freetime][day].include? time
+                valid = false
+                break
+              end
+            end
+          end
+
+          id_of_available_courses << ids_of_courses[index] if valid
+        end
+
+        result += Course.find(id_of_available_courses)
+      end
+    end
+
+    return result
+  end
+
+  def institute_code_of_current_user
+    session[:institute_code]
   end
 end

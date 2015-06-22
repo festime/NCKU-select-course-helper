@@ -19,6 +19,18 @@ $(document).ready(function() {
     });
   }
 
+  $('.select-this-day-free-time').on('click', function() {
+    var day = $(this).attr('class').split(' ')[0];
+    //$('td.'+day+'').not('.success').not('.danger').addClass('success');
+    Array.prototype.forEach.call($('td.'+day+'').not('.success').not('.danger'), function(obj) {
+      //alert($(obj));
+      $(obj).addClass('success');
+      $(obj).attr('value', $(obj).parent().attr('value'));
+    });
+    $(this).trigger('update-hidden-form-value');
+    //alert($(this).attr('class'));
+  });
+
   $('.valid-td').on('click', '*:not(:first-child)', function() {
     if ($(this).hasClass('success')) {
       $(this).removeClass('success');
