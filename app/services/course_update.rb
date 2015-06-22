@@ -78,6 +78,9 @@ class CourseUpdate
           case column
             when :course_name
               remain_course_name_link(course, row, xpath)
+            when :taught_in_english
+              taught_in_english = row.search(xpath).text.strip
+              course[column] = (taught_in_english =~ /Y/ ? true : false)
             else
               course[column] = row.search(xpath).text.strip #.gsub(/\s+/, "")
           end
@@ -143,7 +146,10 @@ class CourseUpdate
           [:classroom, 'td[18]/a/text()'],
           [:remark, 'td[19]/text()']
         ].each do |title, xpath|
-          if title != :course_name
+          if title == :taught_in_english
+            taught_in_english = row.search(xpath).text.strip
+            course[title] = (taught_in_english =~ /Y/ ? true : false)
+          elsif title != :course_name
             course[title] = row.search(xpath).text.strip #.gsub(/\s+/, "")
           else
             remain_course_name_link(course, row, xpath)
@@ -194,7 +200,7 @@ class CourseUpdate
     end
 
     def handle_english_courses(courses, course)
-      if course[:institute_code] = "" && course[:serial_number] == "" &&
+      if course[:institute_code] == "" && course[:serial_number] == "" &&
         course[:course_name] == courses.last[:course_name]
         courses.last[:schedule] += " #{course[:schedule]}"
       else

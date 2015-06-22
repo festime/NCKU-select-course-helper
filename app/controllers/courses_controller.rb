@@ -27,7 +27,7 @@ class CoursesController < ApplicationController
   private
 
   def require_setting
-    if session[:institute_code].nil? || session[:grade].nil?
+    unless user_has_finished_necessary_settings?
       redirect_to setting_path
     end
   end
@@ -47,7 +47,8 @@ class CoursesController < ApplicationController
         schedule: handle_schedule!(course.schedule),
         instructor: course.instructor,
         credits: course.credits,
-        classroom: course.classroom
+        classroom: course.classroom,
+        remark: course.remark
       }
     end
 

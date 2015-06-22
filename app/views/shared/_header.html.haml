@@ -8,9 +8,10 @@
         %span.icon-bar
       = link_to "成大選課小幫手", root_path, class: "navbar-brand"
     .navbar-collapse.collapse
-      %ul.nav.navbar-nav.navbar-left
-        %li
-          = link_to "清除系級設定", clear_setting_path, method: :delete
+      - if session[:institute_code] && session[:grade]
+        %ul.nav.navbar-nav.navbar-left
+          %li
+            = link_to "清除系級設定", clear_setting_path, method: :delete
       %ul.nav.navbar-nav.navbar-right
         %li
           = link_to "回報問題", "#"

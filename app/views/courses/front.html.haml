@@ -19,7 +19,7 @@
                 -#%td{:class => "#{day} #{'danger' if user_has_class?(number, day)}"}
   .col-md-6
     .form-group
-      %h3= "目前必修課(#{@obligatory_courses.map {|course| course[:credits]}.sum}學分)"
+      %h3= "目前必修課"
       %table.table.table-striped
         %thead
           %tr
@@ -28,6 +28,7 @@
             %th 教師姓名
             %th 上課時間
             %th 上課地點
+            %th 備註
         %tbody
           - @obligatory_courses.each do |obligatory_course|
             %tr
@@ -36,6 +37,7 @@
               %td.col-md-1= obligatory_course[:instructor]
               %td.col-md-1= better_schedule_text(Course.find(obligatory_course[:id])[:schedule])
               %td.col-md-1= obligatory_course[:classroom]
+              %td.col-md-1= obligatory_course[:remark]
       -#- @obligatory_courses.each do |obligatory_course|
         -#%div
           -#%label

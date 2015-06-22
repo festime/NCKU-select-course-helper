@@ -4,8 +4,8 @@ class UpdateCoursesController < ApplicationController
 
   def create
     if params[:password] == ENV["password"]
-      CourseUpdate.new.update_courses_of_departments
       CourseUpdate.new.update_general_education_courses
+      CourseUpdate.new.update_courses_of_departments
       redirect_to root_path
 
     else
