@@ -128,7 +128,7 @@ module ApplicationHelper
 
   def course_column_names
     [
-      "id", "institute_code", "serial_number", "class_name", "year",
+      "icon", "id", "institute_code", "serial_number", "class_name", "year",
       "category", "taught_in_english", "course_name", "elective_or_required",
       "credits", "instructor","selected", "space_available", "schedule",
       "classroom", "remark"
