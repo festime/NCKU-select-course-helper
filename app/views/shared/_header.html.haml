@@ -8,15 +8,16 @@
         %span.icon-bar
       = link_to "成大選課小幫手", root_path, class: "navbar-brand"
     .navbar-collapse.collapse
-      - if session[:institute_code] && session[:grade]
-        %ul.nav.navbar-nav.navbar-left
-          %li
-            = link_to "清除系級設定", clear_setting_path, method: :delete
-      %ul.nav.navbar-nav.navbar-right
+      %ul.nav.navbar-nav.navbar-left
         %li
           = link_to "建議", advice_path
         %li
           = link_to "關於本站", about_this_site_path
         %li
           = link_to "關於作者", about_creator_path
+        - if session[:institute_code] && session[:grade]
+          %li
+            = link_to "清除系級設定", clear_setting_path, method: :delete
+      %ul.nav.navbar-nav.navbar-right
+        .fb-like{"data-action" => "like", "data-href" => "https://ncku-select-course-helper.herokuapp.com/", "data-layout" => "button_count", "data-share" => "true", "data-show-faces" => "true"}
     / /.nav-collapse
