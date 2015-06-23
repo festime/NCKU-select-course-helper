@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   root 'pages#landing_page'
 
+  get 'about_this_site', to: 'pages#about_this_site'
+  get 'about_creator', to: 'pages#about_creator'
+  get 'advice', to: 'pages#advice'
+
   get 'front', to: 'courses#front'
   post 'search', to: 'courses#search'
 
