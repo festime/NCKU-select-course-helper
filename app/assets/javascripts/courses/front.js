@@ -210,3 +210,23 @@ $(document).on('mouseenter', ".glyphicon-plus", function() {
 $(document).on('mouseenter', ".glyphicon-remove", function() {
   $(this).css('cursor', 'pointer');
 });
+
+$(document).on('mouseenter', ".glyphicon-collapse-down", function() {
+  $(this).css('cursor', 'pointer');
+});
+
+$(document).on('mouseenter', ".glyphicon-collapse-up", function() {
+  $(this).css('cursor', 'pointer');
+});
+
+$(document).on('click', ".glyphicon-collapse-up", function() {
+  $(this).parent().next().hide();
+  $(this).parent().append('<i class="glyphicon glyphicon-collapse-down" style="cursor: pointer;"></i>');
+  $(this).remove();
+});
+
+$(document).on('click', ".glyphicon-collapse-down", function() {
+  $(this).parent().next().show();
+  $(this).parent().append('<i class="glyphicon glyphicon-collapse-up" style="cursor: pointer;"></i>');
+  $(this).remove();
+});

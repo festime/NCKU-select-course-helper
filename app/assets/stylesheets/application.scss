@@ -16,7 +16,7 @@
 .scroll-top {
   position: fixed;
   bottom: 50%;
-  right: 0%;
+  left: 0%;
   z-index: 100;
   font-size: 16px;
   border-top-left-radius: 3px;
@@ -30,4 +30,30 @@
 
 .glyphicon-plus {
   color: #337ab7;
+}
+
+.glyphicon-collapse-up {
+  font-size: 20px;
+  height: 25px;
+  color: #337ab7;
+}
+
+.glyphicon-collapse-down {
+  font-size: 20px;
+  height: 25px;
+  color: #337ab7;
+}
+
+.course-type {
+  display: flex;
+
+  h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  margin-top: 20px;
+  color: white;
 }

@@ -122,7 +122,9 @@
     - if @courses
       - @courses.each do |type, array_of_courses|
         - if array_of_courses.present?
-          %h3= type_english_to_chinese(type)
+          .course-type
+            %h3= type_english_to_chinese(type)
+            %i.glyphicon.glyphicon-collapse-up
           .table-responsive
             %table.table.table-bordered.table-striped
               %thead
