@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('select#department').on("change", function() {
+  $('select#institute_code').on("change", function() {
     var department = $(this).find(":selected").text();
 
     if (department === "機械系" || department === "化工系" ||
