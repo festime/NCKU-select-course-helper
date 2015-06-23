@@ -163,5 +163,9 @@
                           %td= better_schedule_text(course[column_name])
                         - else
                           %td= course[column_name]
+%ul.nav.pull-left.scroll-top
+  %li
+    %a{:href => "#"}
+      %i.glyphicon.glyphicon-chevron-up
 = javascript_tag do
   window.obligatory_courses = #{@obligatory_courses.to_json.html_safe}

@@ -3,51 +3,8 @@ require 'json'
 require 'mechanize'
 
 class CourseUpdate
-  def update_courses_of_departments
-    departments = [
-      '中文系',
-      '外文系',
-      '歷史系',
-      '台文系',
-      '數學系',
-      '物理系',
-      '化學系',
-      '地科系',
-      '光電系',
-      '機械系',
-      '化工系',
-      '資源系',
-      '材料系',
-      '土木系',
-      '水利系',
-      '工科系',
-      '系統系',
-      '航太系',
-      '環工系',
-      '測量系',
-      '醫工系',
-      '會計系',
-      '統計系',
-      '工資系',
-      '企管系',
-      '交管系',
-      '護理系',
-      '醫技系',
-      '醫學系',
-      '物治系',
-      '職治系',
-      '藥學系',
-      '法律系',
-      '政治系',
-      '經濟系',
-      '心理系',
-      '電機系',
-      'CSIE',
-      '建築系',
-      '都計系',
-      '工設系',
-      '生科系'
-    ]
+  def update_courses_of_departments(departments)
+    departments = departments
     courses = []
     agent = Mechanize.new
     agent.ignore_bad_chunking = true
@@ -102,7 +59,7 @@ class CourseUpdate
 
     ActiveRecord::Base.transaction do
       begin
-        Course.delete_all
+        Course.delete_all if departments.first == "中文系"
         courses.each { |course| Course.create(course) }
       rescue => e
         p e.message
