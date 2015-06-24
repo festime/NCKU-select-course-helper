@@ -95,6 +95,7 @@ end
         #'土木系',
         #'水利系',
         #'工科系',
+        #'能源學程',
         #'系統系',
         #'航太系',
         #'環工系',
@@ -122,3 +123,5 @@ end
         #'工設系',
         #'生科系'
       #]
+ #departments = ["能源學程"]
+ #CourseUpdate.new.update_courses_of_departments(departments)

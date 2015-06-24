@@ -39,6 +39,7 @@ module ApplicationHelper
       ['土木系', 'E6'],
       ['水利系', 'E8'],
       ['工科系', 'E9'],
+      ['能源學程', 'F0'],
       ['系統系', 'F1'],
       ['航太系', 'F4'],
       ['環工系', 'F5'],
@@ -108,7 +109,7 @@ module ApplicationHelper
       #['工設系', 'industrial_design'],
       #['生科系', 'life_science']
     ]
-    numbers_of_each_school = [4, 5, 12, 5, 6, 4, 2, 3, 1]
+    numbers_of_each_school = [4, 5, 13, 5, 6, 4, 2, 3, 1]
     schools = [
       "文學院", "理學院", "工學院", "管理學院", "醫學院",
       "社會科學院", "電機資訊學院", "規劃與設計學院", "生物科學與科技學院"
