@@ -136,6 +136,8 @@ module ApplicationHelper
   end
 
   def better_schedule_text(schedule)
-    schedule.insert(schedule.rindex('['), ' ')
+    position = schedule.rindex('[')
+    position = 0 if position.nil?
+    schedule.insert(position, ' ')
   end
 end

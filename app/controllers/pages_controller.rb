@@ -3,10 +3,10 @@ class PagesController < ApplicationController
   def landing_page
   end
 
-  def about_this_site
+  def about
   end
 
-  def about_creator
+  def useful_links
   end
 
   def advice

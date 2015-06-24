@@ -12,9 +12,9 @@
         %li
           = link_to "建議", advice_path
         %li
-          = link_to "關於本站", about_this_site_path
+          = link_to "關於", about_path
         %li
-          = link_to "關於作者", about_creator_path
+          = link_to "有用連結", useful_links_path
         - if session[:institute_code] && session[:grade]
           %li
             = link_to "清除系級設定", clear_setting_path, method: :delete
