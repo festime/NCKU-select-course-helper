@@ -27,7 +27,6 @@ $(document).ready(function() {
       $(obj).attr('value', $(obj).parent().attr('value'));
     });
     $(this).trigger('update-hidden-form-value');
-    //alert($(this).attr('class'));
   });
 
   $('.valid-td').on('click', '*:not(:first-child)', function() {
@@ -42,7 +41,6 @@ $(document).ready(function() {
     }
     else if (!$(this).hasClass('danger') && !$(this).hasClass('success') &&
       !$(this).hasClass('warning')) {
-      alert('no!!!');
       $(this).addClass('success');
       $(this).attr('value', $(this).parent().attr('value'));
       $(this).trigger('update-hidden-form-value');
@@ -145,8 +143,6 @@ $(document).on('click', ".glyphicon-plus", function() {
   else {
     alert("這個時段已經有課囉");
   }
-  //alert(JSON.stringify(result));
-  //alert(course_schedule.text());
 });
 
 $(document).on("click", ".glyphicon-remove", function() {
