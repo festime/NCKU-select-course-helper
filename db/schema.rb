@@ -11,46 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150621020208) do
+ActiveRecord::Schema.define(version: 20150823032048) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "basic_chineses", force: :cascade do |t|
-    t.string  "institute_code"
-    t.string  "serial_number"
-    t.string  "year"
-    t.string  "category"
-    t.boolean "taught_in_english"
-    t.string  "course_name"
-    t.integer "credits"
-    t.string  "instructor"
-    t.string  "selected"
-    t.string  "space_available"
-    t.string  "schedule"
-    t.string  "classroom"
-    t.string  "remark"
-    t.string  "class_name"
-    t.string  "elective_or_required"
-  end
-
-  create_table "citizenship_histories", force: :cascade do |t|
-    t.string  "institute_code"
-    t.string  "serial_number"
-    t.string  "year"
-    t.string  "category"
-    t.boolean "taught_in_english"
-    t.string  "course_name"
-    t.integer "credits"
-    t.string  "instructor"
-    t.string  "selected"
-    t.string  "space_available"
-    t.string  "schedule"
-    t.string  "classroom"
-    t.string  "remark"
-    t.string  "class_name"
-    t.string  "elective_or_required"
-  end
 
   create_table "courses", force: :cascade do |t|
     t.string  "institute_code"
@@ -71,41 +35,5 @@ ActiveRecord::Schema.define(version: 20150621020208) do
   end
 
   add_index "courses", ["institute_code"], name: "index_courses_on_institute_code", using: :btree
-
-  create_table "general_educations", force: :cascade do |t|
-    t.string  "institute_code"
-    t.string  "serial_number"
-    t.string  "year"
-    t.string  "category"
-    t.boolean "taught_in_english"
-    t.string  "course_name"
-    t.integer "credits"
-    t.string  "instructor"
-    t.string  "selected"
-    t.string  "space_available"
-    t.string  "schedule"
-    t.string  "classroom"
-    t.string  "remark"
-    t.string  "class_name"
-    t.string  "elective_or_required"
-  end
-
-  create_table "international_languages", force: :cascade do |t|
-    t.string  "institute_code"
-    t.string  "serial_number"
-    t.string  "year"
-    t.string  "category"
-    t.boolean "taught_in_english"
-    t.string  "course_name"
-    t.integer "credits"
-    t.string  "instructor"
-    t.string  "selected"
-    t.string  "space_available"
-    t.string  "schedule"
-    t.string  "classroom"
-    t.string  "remark"
-    t.string  "class_name"
-    t.string  "elective_or_required"
-  end
 
 end
