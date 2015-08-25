@@ -1,0 +1,18 @@
+.col-md-6
+  .table-responsive
+    %table.table.table-bordered
+      %thead
+        %tr
+          %th
+          %th.monday.select-this-day-free-time 一
+          %th.tuesday.select-this-day-free-time 二
+          %th.wednesday.select-this-day-free-time 三
+          %th.thursday.select-this-day-free-time 四
+          %th.friday.select-this-day-free-time 五
+      %tbody
+        - ["1", "2", "3", "4", "N", "5", "6", "7", "8", "9"].each do |number|
+          %tr.valid-td{:value => number}
+            %td.col-md-2= number
+            - ["monday", "tuesday", "wednesday", "thursday", "friday"].each do |day|
+              %td{:class => "#{day} col-md-2"}
+              -#%td{:class => "#{day} #{'danger' if user_has_class?(number, day)}"}

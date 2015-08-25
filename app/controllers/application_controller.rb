@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def user_has_finished_necessary_settings?
-    session[:institute_code] && session[:grade]
+    session[:courses_id] && session[:obligatory_courses_id]
   end
 end

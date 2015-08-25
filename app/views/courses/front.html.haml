@@ -1,126 +1,11 @@
 .container
-  .col-md-6
-    .table-responsive
-      %table.table.table-bordered
-        %thead
-          %tr
-            %th
-            %th.monday.select-this-day-free-time 一
-            %th.tuesday.select-this-day-free-time 二
-            %th.wednesday.select-this-day-free-time 三
-            %th.thursday.select-this-day-free-time 四
-            %th.friday.select-this-day-free-time 五
-        %tbody
-          - ["1", "2", "3", "4", "N", "5", "6", "7", "8", "9"].each do |number|
-            %tr.valid-td{:value => number}
-              %td.col-md-2= number
-              - ["monday", "tuesday", "wednesday", "thursday", "friday"].each do |day|
-                %td{:class => "#{day} col-md-2"}
-                -#%td{:class => "#{day} #{'danger' if user_has_class?(number, day)}"}
-  .col-md-6
-    .form-group
-      %h3= "目前必修課"
-      %table.table.table-striped
-        %thead
-          %tr
-            %th 課名
-            %th 學分
-            %th 教師姓名
-            %th 上課時間
-            %th 上課地點
-            %th 備註
-        %tbody
-          - @obligatory_courses.each do |obligatory_course|
-            %tr
-              %td.col-md-2= obligatory_course[:course_name].html_safe
-              %td.col-md-1= obligatory_course[:credits]
-              %td.col-md-2= obligatory_course[:instructor]
-              %td.col-md-2= better_schedule_text(Course.find(obligatory_course[:id])[:schedule])
-              %td.col-md-2= obligatory_course[:classroom]
-              %td.col-md-3= obligatory_course[:remark]
-      -#- @obligatory_courses.each do |obligatory_course|
-        -#%div
-          -#%label
-            -#= obligatory_course[:course_name].html_safe
-          -#= obligatory_course[:credits]
-    %hr
-    = form_tag search_path do
-      .form-group
-        %h3 系上專業選修課
-        .checkbox
-          %label
-            = hidden_field_tag('elective[freshman]', nil)
-            = check_box_tag('elective[freshman]')
-            大一
-          %label
-            = hidden_field_tag('elective[sophomore]', nil)
-            = check_box_tag('elective[sophomore]')
-            大二
-          %label
-            = hidden_field_tag('elective[junior]', nil)
-            = check_box_tag('elective[junior]')
-            大三
-          %label
-            = hidden_field_tag('elective[senior]', nil)
-            = check_box_tag('elective[senior]')
-            大四
-      .form-group
-        %h3 核心通識
-        .checkbox
-          %label
-            = hidden_field_tag('core[basic_chinese]', nil)
-            = check_box_tag('core[basic_chinese]')
-            基礎國文
-          %label
-            = hidden_field_tag('core[freshman_english]', nil)
-            = check_box_tag('core[freshman_english]')
-            大一英文
-          %label
-            = hidden_field_tag('core[sophomore_english]', nil)
-            = check_box_tag('core[sophomore_english]')
-            大二英文
-          %label
-            = hidden_field_tag('core[citizenship_history]', nil)
-            = check_box_tag('core[citizenship_history]')
-            公民與歷史
-          %label
-            = hidden_field_tag('core[philosophy_art]', nil)
-            = check_box_tag('core[philosophy_art]')
-            哲學與藝術
-      .form-group
-        %h3 跨領域通識
-        .checkbox
-          %label
-            = hidden_field_tag('cross[integrated]', nil)
-            = check_box_tag('cross[integrated]')
-            科際整合
-          %label
-            = hidden_field_tag('cross[science_engineering]', nil)
-            = check_box_tag('cross[science_engineering]')
-            自然與工程科學
-          %label
-            = hidden_field_tag('cross[life_science_health]', nil)
-            = check_box_tag('cross[life_science_health]')
-            生命科學與健康
-          %label
-            = hidden_field_tag('cross[humanities]', nil)
-            = check_box_tag('cross[humanities]')
-            人文學
-          %label
-            = hidden_field_tag('cross[social_science]', nil)
-            = check_box_tag('cross[social_science]')
-            社會科學
-      .form-group
-        %input{:type => "hidden", :name => "freetime[1]", :id => "monday"}
-        %input{:type => "hidden", :name => "freetime[2]", :id => "tuesday"}
-        %input{:type => "hidden", :name => "freetime[3]", :id => "wednesday"}
-        %input{:type => "hidden", :name => "freetime[4]", :id => "thursday"}
-        %input{:type => "hidden", :name => "freetime[5]", :id => "friday"}
-      = submit_tag "找課", class: "btn btn-success btn-lg"
+  = render "course_table"
+  = render partial: "list_of_courses", locals: {courses: @courses}
+  = render "form"
 .container
   .row
-    - if @courses
-      - @courses.each do |type, array_of_courses|
+    - if @search_result
+      - @search_result.each do |type, array_of_courses|
         - if array_of_courses.present?
           .course-type
             %h3= type_english_to_chinese(type)
@@ -168,4 +53,4 @@
     %a{:href => "#"}
       %i.glyphicon.glyphicon-chevron-up
 = javascript_tag do
-  window.obligatory_courses = #{@obligatory_courses.to_json.html_safe}
+  window.obligatory_courses = #{@courses.to_json.html_safe}

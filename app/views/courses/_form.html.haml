@@ -1,0 +1,61 @@
+.row
+  = form_tag search_path do
+    .form-group
+      %h3 系上專業選修課
+      .checkbox
+        %label
+          = hidden_field_tag('elective[freshman]', nil)
+          = check_box_tag('elective[freshman]')
+          大一
+        %label
+          = hidden_field_tag('elective[sophomore]', nil)
+          = check_box_tag('elective[sophomore]')
+          大二
+        %label
+          = hidden_field_tag('elective[junior]', nil)
+          = check_box_tag('elective[junior]')
+          大三
+        %label
+          = hidden_field_tag('elective[senior]', nil)
+          = check_box_tag('elective[senior]')
+          大四
+    .form-group
+      %h3 核心通識
+      .checkbox
+        %label
+          = check_box_tag('checkboxes[]', '基礎國文 A7')
+          基礎國文
+        %label
+          = check_box_tag('checkboxes[]', '大一英文 A1 year=1')
+          大一英文
+        %label
+          = check_box_tag('checkboxes[]', '公民與歷史 AG')
+          公民與歷史
+        %label
+          = check_box_tag('checkboxes[]', '哲學與藝術 A9 category=哲學與藝術')
+          哲學與藝術
+    .form-group
+      %h3 跨領域通識
+      .checkbox
+        %label
+          = check_box_tag('checkboxes[]', '科際整合 A9 category=科際整合')
+          科際整合
+        %label
+          = check_box_tag('checkboxes[]', '自然與工程科學 A9 category=自然與工程科學')
+          自然與工程科學
+        %label
+          = check_box_tag('checkboxes[]', '生命科學與健康 A9 category=生命科學與健康')
+          生命科學與健康
+        %label
+          = check_box_tag('checkboxes[]', '人文學 A9 category=人文學')
+          人文學
+        %label
+          = check_box_tag('checkboxes[]', '社會科學 A9 category=社會科學')
+          社會科學
+    .form-group
+      %input{:type => "hidden", :name => "freetime[1]", :id => "monday"}
+      %input{:type => "hidden", :name => "freetime[2]", :id => "tuesday"}
+      %input{:type => "hidden", :name => "freetime[3]", :id => "wednesday"}
+      %input{:type => "hidden", :name => "freetime[4]", :id => "thursday"}
+      %input{:type => "hidden", :name => "freetime[5]", :id => "friday"}
+    = submit_tag "找課", class: "btn btn-success btn-lg"
