@@ -4,20 +4,17 @@
       %h3 系上專業選修課
       .checkbox
         %label
-          = hidden_field_tag('elective[freshman]', nil)
-          = check_box_tag('elective[freshman]')
+          = check_box_tag('checkboxes[]',
+                          "大一選修 #{institute_code} year=1&&elective_or_required=選修")
           大一
         %label
-          = hidden_field_tag('elective[sophomore]', nil)
-          = check_box_tag('elective[sophomore]')
+          = check_box_tag('checkboxes[]', "大二選修 #{institute_code} year=2&&elective_or_required=選修")
           大二
         %label
-          = hidden_field_tag('elective[junior]', nil)
-          = check_box_tag('elective[junior]')
+          = check_box_tag('checkboxes[]', "大三選修 #{institute_code} year=3&&elective_or_required=選修")
           大三
         %label
-          = hidden_field_tag('elective[senior]', nil)
-          = check_box_tag('elective[senior]')
+          = check_box_tag('checkboxes[]', "大四選修 #{institute_code} year=4&&elective_or_required=選修")
           大四
     .form-group
       %h3 核心通識

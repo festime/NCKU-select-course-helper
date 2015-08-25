@@ -1,53 +1,9 @@
 .container
   = render "course_table"
   = render partial: "list_of_courses", locals: {courses: @courses}
-  = render "form"
+  = render partial: "form", locals: {institute_code: @institute_code}
 .container
-  .row
-    - if @search_result
-      - @search_result.each do |type, array_of_courses|
-        - if array_of_courses.present?
-          .course-type
-            %h3= type_english_to_chinese(type)
-            %i.glyphicon.glyphicon-collapse-up
-          .table-responsive
-            %table.table.table-bordered.table-striped
-              %thead
-                %tr
-                  %th
-                  %th 系號
-                  %th 序號
-                  %th 班別
-                  %th 年級
-                  %th 類別
-                  %th 英語授課
-                  %th 課程名稱
-                  %th 必選修
-                  %th 學分
-                  %th 教師姓名
-                  %th 已選課人數
-                  %th 餘額
-                  %th 時間
-                  %th 教室
-                  %th 備註
-              %tbody
-                - array_of_courses.each do |course|
-                  %tr
-                    - course_column_names.each do |column_name|
-                      - if column_name != "id"
-                        - if column_name == "icon"
-                          %td
-                            %i.glyphicon.glyphicon-plus
-                            -#%a{:href => "#"}
-                              -#%i.glyphicon.glyphicon-plus
-                        - elsif column_name == "course_name"
-                          %td= course[column_name].html_safe
-                        - elsif column_name == "taught_in_english"
-                          %td= (course[column_name] ? "是" : "否")
-                        - elsif column_name == "schedule"
-                          %td= better_schedule_text(course[column_name])
-                        - else
-                          %td= course[column_name]
+  = render partial: "search_result", locals: {search_result: @search_result}
 %ul.nav.pull-left.scroll-top
   %li
     %a{:href => "#"}

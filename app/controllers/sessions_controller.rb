@@ -5,6 +5,7 @@ class SessionsController < ApplicationController
   end
 
   def create
+    session[:institute_code] = params[:institute_code]
     session[:courses_id] = Course.where(
       "institute_code LIKE ? AND
        year LIKE ? AND

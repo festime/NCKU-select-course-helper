@@ -15,7 +15,7 @@
           = link_to "關於", about_path
         %li
           = link_to "有用連結", useful_links_path
-        - if session[:institute_code] && session[:grade]
+        - if user_has_finished_necessary_settings?
           %li
             = link_to "清除系級設定", clear_setting_path, method: :delete
       %ul.nav.navbar-nav.navbar-right

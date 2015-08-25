@@ -1,6 +1,7 @@
 class CoursesController < ApplicationController
   before_action :require_setting
   before_action :initialize_courses
+  before_action :set_institute_code
 
 
 
@@ -41,53 +42,7 @@ class CoursesController < ApplicationController
     #end
   end
 
-  def available_elective_classes
-    result = []
-
-    params[:elective].to_enum.with_index(1) do |array, year|
-      checkbox_value = array[1]
-
-      if checkbox_value.present?
-        ids_of_courses = Course.where(
-          "year LIKE ? AND elective_or_required LIKE ? AND
-           institute_code LIKE ?",
-          year.to_s,
-          "選修",
-          institute_code_of_current_user
-        ).pluck(:id)
-        schedules_of_courses = Course.where(
-          "year LIKE ? AND elective_or_required LIKE ? AND
-           institute_code LIKE ?",
-          year.to_s,
-          "選修",
-          institute_code_of_current_user
-        ).pluck(:schedule).collect do |schedule|
-          handle_schedule!(schedule)
-        end
-
-        id_of_available_courses = []
-        schedules_of_courses.each_with_index do |course_schedule, index|
-          valid = true
-          course_schedule.each do |day, array_of_time|
-            array_of_time.each do |time|
-              if !params[:freetime][day].include? time
-                valid = false
-                break
-              end
-            end
-          end
-
-          id_of_available_courses << ids_of_courses[index] if valid
-        end
-
-        result += Course.find(id_of_available_courses)
-      end
-    end
-
-    return result
-  end
-
-  def institute_code_of_current_user
-    session[:institute_code]
+  def set_institute_code
+    @institute_code = session[:institute_code]
   end
 end

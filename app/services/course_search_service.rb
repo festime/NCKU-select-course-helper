@@ -14,15 +14,21 @@ class CourseSearchService
 
     @checkbox_values.each do |value|
       category_name, institute_code, condition_string = value.split(' ')
-      @conditions = { institute_code: institute_code }
+
+      first_argument = "institute_code LIKE ?"
+      remaining_arguments = [institute_code]
 
       if condition_string
-        key = condition_string.split('=').first.to_sym
-        value = condition_string.split('=').last
-        @conditions[key] = value
+        conditions = condition_string.split('&&')
+
+        while conditions.count > 0
+          first_argument += " AND #{conditions[0].split('=').first} LIKE ?"
+          remaining_arguments << conditions[0].split('=').last
+          conditions.shift
+        end
       end
 
-      search_result[category_name] = filter_courses
+      search_result[category_name] = filter_courses(first_argument, remaining_arguments)
     end
 
     search_result
@@ -30,17 +36,22 @@ class CourseSearchService
 
   private
 
-  def filter_courses
-    all_courses = Course.where(@conditions)
+  def filter_courses(first_argument, remaining_arguments)
+    all_courses = Course.where(first_argument, *remaining_arguments)
 
     all_courses.select do |course|
       compatible = true
 
-      course.well_formatted_schedule.each do |day, day_schedule|
-        if day_schedule - @user_freetime[day] != []
-          compatible = false
-          break
+      begin
+        course.well_formatted_schedule.each do |day, day_schedule|
+          if day_schedule - @user_freetime[day] != []
+            compatible = false
+            break
+          end
         end
+      rescue => e
+        p e.message
+        p e.backtrace
       end
 
       compatible

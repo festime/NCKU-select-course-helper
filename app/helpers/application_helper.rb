@@ -1,25 +1,4 @@
 module ApplicationHelper
-  def type_english_to_chinese(type)
-    hash = {
-      philosophy_art: "哲學與藝術",
-      citizenship_history: "公民與歷史",
-      basic_chinese: "基礎國文",
-      freshman_english: "大一英文",
-      sophomore_english: "大二英文",
-      humanities: "人文學",
-      life_science_health: "生命科學與健康",
-      science_engineering: "自然與工程科學",
-      social_science: "社會科學",
-      integrated: "科際整合",
-      freshman: "大一選修",
-      sophomore: "大二選修",
-      junior:  "大三選修",
-      senior:  "大四選修",
-      elective: "選修專業課"
-    }
-    hash[type]
-  end
-
   def options_of_departments
     result = []
     departments = [
