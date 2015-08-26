@@ -30,7 +30,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    session[:courses_id] = session[:obligatory_courses_id] = nil
+    session[:institute_code] = session[:courses_id] = session[:obligatory_courses_id] = nil
     redirect_to setting_path
   end
 

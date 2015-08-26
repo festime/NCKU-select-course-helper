@@ -7,6 +7,9 @@ Rails.application.routes.draw do
 
   get 'front', to: 'courses#front'
   post 'search', to: 'courses#search'
+  post 'add_course', to: 'courses#add_course'
+  delete 'remove_course', to: 'courses#remove_course'
+  get 'default_table', to: 'courses#default_table'
 
   get 'setting', to: 'sessions#new'
   post 'setting', to: 'sessions#create'

@@ -1,0 +1,11 @@
+var new_course = '<tr>' +
+  '<td> <%= link_to '', remove_course_path(course_id: @new_course.id), class: 'glyphicon glyphicon-remove', remote: true, method: :delete %> </td>' +
+  '<td class="col-md-2"> <%= @new_course.course_name.html_safe %> </td>' +
+  '<td class="col-md-2"> <%= @new_course.credits               %> </td>' +
+  '<td class="col-md-2"> <%= @new_course.instructor            %> </td>' +
+  '<td class="col-md-2"> <%= @new_course.schedule              %> </td>' +
+  '<td class="col-md-2"> <%= @new_course.classroom             %> </td>' +
+  '<td class="col-md-2"> <%= @new_course.remark                %> </td>' +
+  '</tr>'
+
+$('#course-table tbody').append(new_course)

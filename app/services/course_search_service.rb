@@ -28,23 +28,20 @@ class CourseSearchService
         end
       end
 
-      search_result[category_name] = filter_courses(first_argument, remaining_arguments)
+      desired_courses = Course.where(first_argument, *remaining_arguments)
+      search_result[category_name] = CourseSearchService.available_courses(desired_courses, @user_freetime)
     end
 
     search_result
   end
 
-  private
-
-  def filter_courses(first_argument, remaining_arguments)
-    all_courses = Course.where(first_argument, *remaining_arguments)
-
-    all_courses.select do |course|
+  def self.available_courses(desired_courses, user_freetime)
+    desired_courses.select do |course|
       compatible = true
 
       begin
         course.well_formatted_schedule.each do |day, day_schedule|
-          if day_schedule - @user_freetime[day] != []
+          if day_schedule - user_freetime[day] != []
             compatible = false
             break
           end

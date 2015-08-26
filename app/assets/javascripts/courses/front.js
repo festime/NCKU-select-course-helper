@@ -13,7 +13,7 @@ $(document).ready(function() {
       for (var j = 0 ; j < schedule[day].length ; ++j) {
         var course_time_index = schedule[day][j];
         var target_cell = $('tr[value='+course_time_index+'] td:nth-child('+day+')').next();
-        target_cell.addClass('danger');
+        target_cell.addClass('info');
         target_cell.text($(course_name).html());
       }
     });
@@ -137,8 +137,8 @@ $(document).on('click', ".glyphicon-plus", function() {
         target_cell.text(course_name);
       }
     });
-    $(this).parent().append('<i class="glyphicon glyphicon-remove"></i>');
-    $(this).remove();
+    //$(this).parent().append('<i class="glyphicon glyphicon-remove"></i>');
+    //$(this).remove();
   }
   else {
     alert("這個時段已經有課囉");
@@ -195,8 +195,9 @@ $(document).on("click", ".glyphicon-remove", function() {
     }
   });
 
-  $(this).parent().append('<i class="glyphicon glyphicon-plus"></i>');
-  $(this).remove();
+  $(this).closest('tr').remove();
+  //$(this).parent().append('<i class="glyphicon glyphicon-plus"></i>');
+  //$(this).remove();
 });
 
 $(document).on('mouseenter', ".glyphicon-plus", function() {

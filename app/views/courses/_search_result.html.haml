@@ -32,7 +32,8 @@
                     - if column_name != "id"
                       - if column_name == "icon"
                         %td
-                          %i.glyphicon.glyphicon-plus
+                          = link_to '', add_course_path(course_id: course.id), class: 'glyphicon glyphicon-plus', remote: true, method: :post
+                          -#%i.glyphicon.glyphicon-plus
                           -#%a{:href => "#"}
                             -#%i.glyphicon.glyphicon-plus
                       - elsif column_name == "course_name"

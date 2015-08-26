@@ -6,6 +6,8 @@ class ApplicationController < ActionController::Base
   helper_method :user_has_finished_necessary_settings?
 
   def user_has_finished_necessary_settings?
-    session[:courses_id] && session[:obligatory_courses_id]
+    session[:institute_code] &&
+    session[:courses_id] &&
+    session[:obligatory_courses_id]
   end
 end
