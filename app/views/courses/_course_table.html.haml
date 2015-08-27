@@ -1,6 +1,6 @@
 .col-md-6
   .table-responsive
-    %table.table.table-bordered
+    %table#course-table.table.table-bordered
       %thead
         %tr
           %th
@@ -10,11 +10,6 @@
           %th.thursday.select-this-day-free-time 四
           %th.friday.select-this-day-free-time 五
       %tbody
-        - ["1", "2", "3", "4", "N", "5", "6", "7", "8", "9"].each do |number|
-          %tr.valid-td{:value => number}
-            %td.col-md-2= number
-            - ["monday", "tuesday", "wednesday", "thursday", "friday"].each do |day|
-              %td{:class => "#{day} col-md-2"}
-              -#%td{:class => "#{day} #{'danger' if user_has_class?(number, day)}"}
-    = link_to "恢復預設課表", default_table_path, class: "btn btn-danger btn-lg"
+        = render partial: "course_table_body", locals: {courses: courses}
+    = link_to "恢復成預設課表", default_table_path, class: "btn btn-danger btn-lg"
 

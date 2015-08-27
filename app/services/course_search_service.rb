@@ -1,11 +1,16 @@
 class CourseSearchService
 
-  def initialize(params)
+  def initialize(params, user_freetime = nil)
     @courses = {}
     @checkbox_values = params[:checkboxes]
-    @user_freetime = params[:freetime].clone
-    @user_freetime.each do |day, freetime|
-      @user_freetime[day] = freetime.split('')
+
+    if user_freetime
+      @user_freetime = user_freetime
+    else
+      @user_freetime = params[:freetime].clone
+      @user_freetime.each do |day, freetime|
+        @user_freetime[day] = freetime.split('')
+      end
     end
   end
 

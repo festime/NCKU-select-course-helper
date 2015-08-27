@@ -18,12 +18,8 @@ class SessionsController < ApplicationController
     ).collect do |course|
       course.id
     end
-
     session[:obligatory_courses_id] = session[:courses_id].clone
 
-    flash[:info] = "點擊課表最上面那列星期幾的格子，或點課表內的格子\
-                    ，格子會變綠色，表示你想找的時段，點紅色格子可以把那格必修課取消掉\
-                    ，選好想要的課程類別，最後按下面那顆找課按鈕"
     flash[:warning] = "課程人數餘額的資料可能不是最即時的"
 
     redirect_to front_path

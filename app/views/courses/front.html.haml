@@ -1,8 +1,8 @@
 .container
-  = render "course_table"
-  = render partial: "list_of_courses", locals: {courses: @courses}
+  .row
+    = render partial: "course_table", locals: {courses: @courses}
+    = render partial: "list_of_courses", locals: {courses: @courses}
   = render partial: "form", locals: {institute_code: @institute_code}
-.container
   = render partial: "search_result", locals: {search_result: @search_result}
 %ul.nav.pull-left.scroll-top
   %li

@@ -1,0 +1,8 @@
+- course_table_data(courses).each do |schedule_time, row|
+  %tr
+    %td
+    - row.each do |day, data|
+      - if data != {}
+        %td.col-md-2.info{:class => "course-table-#{data[:id]}"}= data[:course_name].html_safe
+      - else
+        %td.col-md-2

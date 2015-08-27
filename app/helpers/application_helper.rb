@@ -1,4 +1,5 @@
 module ApplicationHelper
+  # sessions/new.html.haml
   def options_of_departments
     result = []
     departments = [
@@ -106,6 +107,7 @@ module ApplicationHelper
     result
   end
 
+  # courses/_search_result.html.haml
   def course_column_names
     [
       "icon", "id", "institute_code", "serial_number", "class_name", "year",
@@ -115,9 +117,31 @@ module ApplicationHelper
     ]
   end
 
+  # courses/_list_of_courses.html.haml, _search_result.html.haml
   def better_schedule_text(schedule)
     position = schedule.rindex('[')
     position = 0 if position.nil?
     schedule.insert(position, ' ')
+  end
+
+  # {'1' => {'1' => ['course_name', 'id']}}
+  def course_table_data(courses)
+    result = Hash.new do |hash, key|
+      hash[key] = {'1' => {}, '2' => {}, '3' => {}, '4' => {}, '5' => {}}
+    end
+    ['1', '2', '3', '4', 'N', '5', '6', '7', '8', '9'].each do |number|
+      result[number]
+    end
+
+    courses.each do |course|
+      course.well_formatted_schedule.each do |day, schedule_time|
+        schedule_time.each do |time|
+          result[time][day][:course_name] = course.course_name
+          result[time][day][:id] = course.id
+        end
+      end
+    end
+
+    result
   end
 end

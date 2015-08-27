@@ -6,11 +6,10 @@ class CoursesController < ApplicationController
 
 
   def front
-    current_user_freetime
   end
 
   def search
-    @search_result = CourseSearchService.new(params).search
+    @search_result = CourseSearchService.new(params, current_user_freetime).search
 
     render :front
   end
@@ -19,10 +18,13 @@ class CoursesController < ApplicationController
     respond_to do |format|
       format.js do
         @new_course = Course.find(params[:course_id])
-        binding.pry
-        if !session[:courses_id].include? params[:course_id].to_i &&
+
+        if !(session[:courses_id].include? params[:course_id].to_i) &&
            CourseSearchService.available_courses([@new_course], current_user_freetime) == [@new_course]
           session[:courses_id] << params[:course_id].to_i
+          @courses = Course.find(session[:courses_id])
+        else
+          @new_course = nil
         end
       end
     end
@@ -31,7 +33,7 @@ class CoursesController < ApplicationController
   def remove_course
     respond_to do |format|
       format.js do
-        if session[:courses_id].incldue? params[:course_id].to_i
+        if session[:courses_id].include? params[:course_id].to_i
           session[:courses_id].delete(params[:course_id].to_i)
         end
       end
@@ -54,17 +56,7 @@ class CoursesController < ApplicationController
   end
 
   def initialize_courses
-    @courses = Course.find(session[:courses_id]).map do |course|
-      {
-        id: course.id,
-        course_name: course.course_name,
-        schedule: course.well_formatted_schedule,
-        instructor: course.instructor,
-        credits: course.credits,
-        classroom: course.classroom,
-        remark: course.remark
-      }
-    end
+    @courses = Course.find(session[:courses_id])
 
     #@courses.delete_if do |course|
       #course[:course_name] =~ /通識課程|歷史|基礎國文（一）|基礎國文（二）/ ||
@@ -78,14 +70,6 @@ class CoursesController < ApplicationController
   end
 
   def current_user_freetime
-    courses_schedule = Course.find(session[:courses_id]).collect do |course|
-      course.well_formatted_schedule
-    end
-
-    courses_schedule.inject do |result, schedule|
-      result.merge(schedule) {|day, result_schedule, new_schedule| result_schedule | new_schedule}
-    end
-
     user_freetime = {
       '1' => ['1', '2', '3', '4', 'N', '5', '6', '7', '8', '9'],
       '2' => ['1', '2', '3', '4', 'N', '5', '6', '7', '8', '9'],
@@ -94,12 +78,25 @@ class CoursesController < ApplicationController
       '5' => ['1', '2', '3', '4', 'N', '5', '6', '7', '8', '9']
     }
 
-    courses_schedule.each do |course_schedule|
-      course_schedule.each do |day, schedule|
-        user_freetime[day] -= schedule
-      end
+    current_courses_schedule.each do |day, course_schedule|
+      user_freetime[day] -= course_schedule
     end
+    #current_courses_schedule.each do |course_schedule|
+      #course_schedule.each do |day, schedule|
+        #user_freetime[day] -= schedule
+      #end
+    #end
 
     user_freetime
+  end
+
+  def current_courses_schedule
+    courses_schedule = Course.find(session[:courses_id]).collect do |course|
+      course.well_formatted_schedule
+    end
+
+    courses_schedule.inject do |result, schedule|
+      result.merge(schedule) {|day, result_schedule, new_schedule| result_schedule | new_schedule}
+    end
   end
 end

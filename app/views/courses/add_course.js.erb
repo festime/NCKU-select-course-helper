@@ -1,11 +1,16 @@
-var new_course = '<tr>' +
-  '<td> <%= link_to '', remove_course_path(course_id: @new_course.id), class: 'glyphicon glyphicon-remove', remote: true, method: :delete %> </td>' +
-  '<td class="col-md-2"> <%= @new_course.course_name.html_safe %> </td>' +
-  '<td class="col-md-2"> <%= @new_course.credits               %> </td>' +
-  '<td class="col-md-2"> <%= @new_course.instructor            %> </td>' +
-  '<td class="col-md-2"> <%= @new_course.schedule              %> </td>' +
-  '<td class="col-md-2"> <%= @new_course.classroom             %> </td>' +
-  '<td class="col-md-2"> <%= @new_course.remark                %> </td>' +
-  '</tr>'
+<% if @new_course %>
+  var new_course = '<tr id="list-<%= @new_course.id %>">' +
+    '<td> <%= link_to '', remove_course_path(course_id: @new_course.id), class: 'glyphicon glyphicon-remove', remote: true, method: :delete %> </td>' +
+    '<td class="col-md-2"> <%= @new_course.course_name.html_safe %> </td>' +
+    '<td class="col-md-2"> <%= @new_course.credits               %> </td>' +
+    '<td class="col-md-2"> <%= @new_course.instructor            %> </td>' +
+    '<td class="col-md-2"> <%= @new_course.schedule              %> </td>' +
+    '<td class="col-md-2"> <%= @new_course.classroom             %> </td>' +
+    '<td class="col-md-2"> <%= @new_course.remark                %> </td>' +
+    '</tr>'
 
-$('#course-table tbody').append(new_course)
+  $('#course-table tbody').html("<%= escape_javascript (render partial: 'course_table_body', locals: {courses: @courses}) %>")
+  $('#course-list tbody').append(new_course)
+<% else %>
+  alert('這個時段已經有課囉');
+<% end %>

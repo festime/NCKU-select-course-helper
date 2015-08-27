@@ -5,20 +5,6 @@ $(document).ready(function() {
     obligatory_courses = [];
   }
 
-  for (i = 0 ; i < obligatory_courses.length ; ++i) {
-    // $('tr[value="5"]');
-    var course_name = obligatory_courses[i]["course_name"];
-    var schedule = obligatory_courses[i]["schedule"]; // {"2" => ["3", "4"]}
-    Object.keys(schedule).forEach(function(day) {
-      for (var j = 0 ; j < schedule[day].length ; ++j) {
-        var course_time_index = schedule[day][j];
-        var target_cell = $('tr[value='+course_time_index+'] td:nth-child('+day+')').next();
-        target_cell.addClass('info');
-        target_cell.text($(course_name).html());
-      }
-    });
-  }
-
   $('.select-this-day-free-time').on('click', function() {
     var day = $(this).attr('class').split(' ')[0];
     //$('td.'+day+'').not('.success').not('.danger').addClass('success');
@@ -146,58 +132,12 @@ $(document).on('click', ".glyphicon-plus", function() {
 });
 
 $(document).on("click", ".glyphicon-remove", function() {
-  var course_name = $(this).closest('tr').children('td').eq(7).children().text();
-  var course_schedule = $(this).closest('tr').children('td').eq(13).text();
-  var parsed_schedule = {1: [], 2: [], 3: [], 4: [], 5: []};
-  var zero_to_nine = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  var courseId = $(this).closest('tr').attr('id').split('-')[1];
+  var courseInTable = $('.course-table-'+courseId+'');
 
-  // ex: [1]2~3, [2]2~4
-  while (true) {
-    var continuous_courses = course_schedule.match(/\[\d\]\d~\d/);
-
-    if (continuous_courses) {
-      var day = continuous_courses[0].match(/\[\d\]/)[0].match(/\d/)[0];
-      var schedule_of_this_day = continuous_courses[0].match(/\d~\d/)[0];
-      var schedule_start = parseInt(schedule_of_this_day.split('~')[0]);
-      var schedule_end   = parseInt(schedule_of_this_day.split('~')[1]) + 1;
-      parsed_schedule[day] = parsed_schedule[day].concat(zero_to_nine.slice(schedule_start, schedule_end));
-      course_schedule = course_schedule.replace(/\[\d\]\d~\d/, '');
-    }
-    else {
-      break;
-    }
-  }
-
-  // ex: [2]N
-  while (true) {
-    var single_course = course_schedule.match(/\[\d\]\d|\[\d\]N/);
-
-    if (single_course) {
-      var day = single_course[0].match(/\[\d\]/)[0].match(/\d/)[0];
-      var schedule_of_this_day = single_course[0].match(/\]\d/)[0];
-      parsed_schedule[day] = parsed_schedule[day].concat(schedule_of_this_day);
-      course_schedule = course_schedule.replace(/\[\d\]\d|\[\d\]N/, '');
-    }
-    else {
-      break;
-    }
-  }
-
-  Object.keys(parsed_schedule).forEach(function(day) {
-    for (var j = 0 ; j < parsed_schedule[day].length ; ++j) {
-      var course_time_index = parsed_schedule[day][j];
-      var target_cell = $('tr[value='+course_time_index+'] td:nth-child('+day+')').next();
-
-      if (target_cell.text() == course_name) {
-        target_cell.text('');
-        target_cell.removeClass('warning');
-      }
-    }
-  });
-
+  courseInTable.text('');
+  courseInTable.removeClass('info');
   $(this).closest('tr').remove();
-  //$(this).parent().append('<i class="glyphicon glyphicon-plus"></i>');
-  //$(this).remove();
 });
 
 $(document).on('mouseenter', ".glyphicon-plus", function() {
