@@ -9,9 +9,13 @@ class CoursesController < ApplicationController
   end
 
   def search
-    @search_result = CourseSearchService.new(params, current_user_freetime).search
+    respond_to do |format|
+      format.js do
+        @search_result = CourseSearchService.new(params, current_user_freetime).search
+      end
+    end
 
-    render :front
+    #render :front
   end
 
   def add_course

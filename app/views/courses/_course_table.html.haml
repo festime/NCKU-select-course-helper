@@ -1,15 +1,14 @@
-.col-md-6
-  .table-responsive
-    %table#course-table.table.table-bordered
-      %thead
-        %tr
-          %th
-          %th.monday.select-this-day-free-time 一
-          %th.tuesday.select-this-day-free-time 二
-          %th.wednesday.select-this-day-free-time 三
-          %th.thursday.select-this-day-free-time 四
-          %th.friday.select-this-day-free-time 五
-      %tbody
-        = render partial: "course_table_body", locals: {courses: courses}
-    = link_to "恢復成預設課表", default_table_path, class: "btn btn-danger btn-lg"
+.table-responsive
+  %table#course-table.table.table-bordered
+    %thead
+      %tr
+        %th
+        %th.monday.select-this-day-free-time 一
+        %th.tuesday.select-this-day-free-time 二
+        %th.wednesday.select-this-day-free-time 三
+        %th.thursday.select-this-day-free-time 四
+        %th.friday.select-this-day-free-time 五
+    %tbody
+      = render partial: "course_table_body", locals: {courses: courses}
+  = link_to "恢復成預設課表", default_table_path, class: "btn btn-danger btn-lg"
 

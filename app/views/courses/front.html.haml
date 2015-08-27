@@ -1,9 +1,14 @@
 .container
   .row
-    = render partial: "course_table", locals: {courses: @courses}
-    = render partial: "list_of_courses", locals: {courses: @courses}
-  = render partial: "form", locals: {institute_code: @institute_code}
-  = render partial: "search_result", locals: {search_result: @search_result}
+    .col-md-6
+      = render partial: "course_table", locals: {courses: @courses}
+    .col-md-6
+      = render partial: "list_of_courses", locals: {courses: @courses}
+  .row
+    = render partial: "form", locals: {institute_code: @institute_code}
+  .row
+    #search-result
+      = render partial: "search_result", locals: {search_result: @search_result}
 %ul.nav.pull-left.scroll-top
   %li
     %a{:href => "#"}

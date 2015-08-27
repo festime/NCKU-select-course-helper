@@ -2,7 +2,7 @@ class CourseSearchService
 
   def initialize(params, user_freetime = nil)
     @courses = {}
-    @checkbox_values = params[:checkboxes]
+    @checkbox_values = params[:checkboxes] || {}
 
     if user_freetime
       @user_freetime = user_freetime
