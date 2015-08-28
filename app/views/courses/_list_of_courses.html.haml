@@ -18,7 +18,7 @@
           %td.col-md-2= course.course_name.html_safe
           %td.col-md-1= course.credits
           %td.col-md-2= course.instructor
-          %td.col-md-2= course.schedule#better_schedule_text(Course.find(course[:id])[:schedule])
+          %td.col-md-2= better_schedule_text(course.schedule)
           %td.col-md-2= course.classroom
           %td.col-md-3= course.remark
 

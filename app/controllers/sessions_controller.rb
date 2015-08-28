@@ -17,6 +17,7 @@ class SessionsController < ApplicationController
     ).collect do |course|
       course.id
     end
+
     courses_id.delete_if do |course_id|
       course_name = Nokogiri::HTML(Course.find(course_id).course_name).text
 
@@ -26,11 +27,6 @@ class SessionsController < ApplicationController
       course_name == "公民"
     end
 
-    #@courses.delete_if do |course|
-      #course[:course_name] =~ /通識課程|歷史|基礎國文（一）|基礎國文（二）/ ||
-      #course[:course_name] =~ /英文（含口語訓練）|哲學與藝術|體育（三）/ ||
-      #course[:course_name] =~ /體育（四）|公民/
-    #end
     session[:institute_code] = params[:institute_code]
     session[:courses_id] = courses_id
     session[:obligatory_courses_id] = session[:courses_id].clone

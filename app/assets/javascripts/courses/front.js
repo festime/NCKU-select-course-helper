@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var numbers = [ '1', '2', '3', '4', 'N', '5', '6', '7', '8', '9' ];
-  $.each(numbers, function( index, value ) {
+  $.each(numbers, function(index, value) {
     $('#course-table tbody').children('tr').eq(index).children('td').eq(0).text(value);
   });
 });

@@ -11,8 +11,18 @@ class CoursesController < ApplicationController
   def search
     respond_to do |format|
       format.js do
+        if params[:checkboxes]
+          search_keywords = params[:checkboxes]
+        elsif params[:other_department]
+          search_keywords = [
+            "#{department_name_of(params[:other_department][:institute_code])} " +
+            "#{params[:other_department][:institute_code]} " +
+            "year=#{params[:other_department][:year]}"
+          ]
+        end
+
         @search_result = CourseSearchService.new(
-          search_keywords: params[:checkboxes],
+          search_keywords: search_keywords,
           courses_id: session[:courses_id]
         ).search
       end

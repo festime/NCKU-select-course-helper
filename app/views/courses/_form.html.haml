@@ -55,13 +55,15 @@
       %input{:type => "hidden", :name => "freetime[4]", :id => "thursday"}
       %input{:type => "hidden", :name => "freetime[5]", :id => "friday"}
     = submit_tag "找課", class: "btn btn-success btn-lg"
+    = link_to "清空搜尋結果", front_path, class: "btn btn-warning btn-lg"
 .col-md-6
   = form_tag search_path, remote: true do
     .form-group
       %h3 外系課程
       = label_tag "other_department[institute_code]", "系"
       = select_tag("other_department[institute_code]", grouped_options_for_select(options_of_departments), class: "form-control")
-      = label_tag "other_department[grade]", "年級"
-      = select_tag("other_department[grade]", options_for_select((1..4).map {|number| [number.to_s, number]}), class: "form-control")
+      = label_tag "other_department[year]", "年級"
+      = select_tag("other_department[year]", options_for_select((1..4).map {|number| [number.to_s, number]}), class: "form-control")
     = submit_tag "找課", class: "btn btn-success btn-lg"
+    = link_to "清空搜尋結果", front_path, class: "btn btn-warning btn-lg"
 
