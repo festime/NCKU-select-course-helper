@@ -5,8 +5,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    session[:institute_code] = params[:institute_code]
-    session[:courses_id] = Course.where(
+    courses_id = Course.where(
       "institute_code LIKE ? AND
        year LIKE ? AND
        elective_or_required LIKE ? AND
@@ -18,6 +17,22 @@ class SessionsController < ApplicationController
     ).collect do |course|
       course.id
     end
+    courses_id.delete_if do |course_id|
+      course_name = Nokogiri::HTML(Course.find(course_id).course_name).text
+
+      course_name =~ /通識課程|英文（含口語訓練）|哲學與藝術/ ||
+      course_name =~ /基礎國文（一）|基礎國文（二）/ ||
+      course_name == "歷史" ||
+      course_name == "公民"
+    end
+
+    #@courses.delete_if do |course|
+      #course[:course_name] =~ /通識課程|歷史|基礎國文（一）|基礎國文（二）/ ||
+      #course[:course_name] =~ /英文（含口語訓練）|哲學與藝術|體育（三）/ ||
+      #course[:course_name] =~ /體育（四）|公民/
+    #end
+    session[:institute_code] = params[:institute_code]
+    session[:courses_id] = courses_id
     session[:obligatory_courses_id] = session[:courses_id].clone
 
     flash[:warning] = "課程人數餘額的資料可能不是最即時的"

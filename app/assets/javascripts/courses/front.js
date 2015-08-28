@@ -1,66 +1,7 @@
 $(document).ready(function() {
-  var i;
-
-  if (typeof obligatory_courses === 'undefined') {
-    obligatory_courses = [];
-  }
-
-  $('.select-this-day-free-time').on('click', function() {
-    var day = $(this).attr('class').split(' ')[0];
-    //$('td.'+day+'').not('.success').not('.danger').addClass('success');
-    Array.prototype.forEach.call($('td.'+day+'').not('.success').not('.danger'), function(obj) {
-      $(obj).addClass('success');
-      $(obj).attr('value', $(obj).parent().attr('value'));
-    });
-    $(this).trigger('update-hidden-form-value');
-  });
-
-  $('.valid-td').on('click', '*:not(:first-child)', function() {
-    if ($(this).hasClass('success')) {
-      $(this).removeClass('success');
-      $(this).attr('value', null);
-      $(this).trigger('update-hidden-form-value');
-    }
-    else if ($(this).hasClass('danger')) {
-      $(this).removeClass('danger');
-      $(this).text('');
-    }
-    else if (!$(this).hasClass('danger') && !$(this).hasClass('success') &&
-      !$(this).hasClass('warning')) {
-      $(this).addClass('success');
-      $(this).attr('value', $(this).parent().attr('value'));
-      $(this).trigger('update-hidden-form-value');
-    }
-  });
-
-  $('.monday, .tuesday, .wednesday, .thursday, .friday').bind('update-hidden-form-value', function(e) {
-    // do more stuff now that #mydiv has been manipulated
-    var target_id = $(this).attr("class").split(" ")[0];
-    var column_index = $(this).parent().children().index($(this));
-
-    switch (column_index) {
-      case 1:
-        free_time_cells = $('.monday.success');
-        break;
-      case 2:
-        free_time_cells = $('.tuesday.success');
-        break;
-      case 3:
-        free_time_cells = $('.wednesday.success');
-        break;
-      case 4:
-        free_time_cells = $('.thursday.success');
-        break;
-      case 5:
-        free_time_cells = $('.friday.success');
-        break;
-    }
-
-    var free_time = free_time_cells.map(function() {
-      return $(this).attr('value');
-    }).get().join('');
-    $("#" + target_id).val(free_time);
-    return;
+  var numbers = [ '1', '2', '3', '4', 'N', '5', '6', '7', '8', '9' ];
+  $.each(numbers, function( index, value ) {
+    $('#course-table tbody').children('tr').eq(index).children('td').eq(0).text(value);
   });
 });
 
@@ -123,8 +64,6 @@ $(document).on('click', ".glyphicon-plus", function() {
         target_cell.text(course_name);
       }
     });
-    //$(this).parent().append('<i class="glyphicon glyphicon-remove"></i>');
-    //$(this).remove();
   }
   else {
     alert("這個時段已經有課囉");
@@ -138,14 +77,6 @@ $(document).on("click", ".glyphicon-remove", function() {
   courseInTable.text('');
   courseInTable.removeClass('info');
   $(this).closest('tr').remove();
-});
-
-$(document).on('mouseenter', ".glyphicon-plus", function() {
-  $(this).css('cursor', 'pointer');
-});
-
-$(document).on('mouseenter', ".glyphicon-remove", function() {
-  $(this).css('cursor', 'pointer');
 });
 
 $(document).on('mouseenter', ".glyphicon-collapse-down", function() {

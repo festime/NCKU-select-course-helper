@@ -8,28 +8,38 @@ class Course < ActiveRecord::Base
     result = {"1" => [], "2" => [], "3" => [], "4" => [], "5" => []}
     schedule_clone = schedule.clone
 
-    loop do
-      continuous_courses = schedule_clone[/\[\d\]\d~\d/]
+    begin
+      loop do
+        continuous_courses = schedule_clone[/\[\d\]\d~\d/]
 
-      if continuous_courses
-        # "[1]2~3"
-        result[continuous_courses[1]] += (continuous_courses[3]..continuous_courses[5]).to_a
-        schedule_clone.sub!(/\[\d\]\d~\d/, "")
-      else
-        break
+        if continuous_courses
+          # "[1]2~3"
+          result[continuous_courses[1]] += (continuous_courses[3]..continuous_courses[5]).to_a
+          schedule_clone.sub!(/\[\d\]\d~\d/, "")
+        else
+          break
+        end
       end
-    end
 
-    loop do
-      single_course = schedule_clone[/\[\d\](\d|N)/]
+      loop do
+        single_course = schedule_clone[/\[\d\](\d|N)/]
 
-      if single_course
-        # "[2]5"
-        result[single_course[1]] += [single_course[3]]
-        schedule_clone.sub!(/\[\d\](\d|N)/, "")
-      else
-        break
+        if single_course
+          # "[2]5"
+          result[single_course[1]] += [single_course[3]]
+          schedule_clone.sub!(/\[\d\](\d|N)/, "")
+        else
+          break
+        end
       end
+
+      result.each do |day, schedule|
+        schedule.delete_if do |time|
+          !(['1', '2', '3', '4', 'N', '5', '6', '7', '8', '9'].include? time)
+        end
+      end
+    rescue => e
+      puts e.message
     end
 
     result.select {|day, free_time| free_time != []}

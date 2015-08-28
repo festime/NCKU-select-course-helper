@@ -15,7 +15,6 @@
         %tr{:id => "list-#{course.id}"}
           %td
             = link_to '', remove_course_path(course_id: course.id), class: 'glyphicon glyphicon-remove', remote: true, method: :delete
-            -#%i.glyphicon.glyphicon-remove
           %td.col-md-2= course.course_name.html_safe
           %td.col-md-1= course.credits
           %td.col-md-2= course.instructor

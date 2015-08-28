@@ -1,24 +1,15 @@
 class CourseSearchService
 
-  def initialize(params, user_freetime = nil)
-    @courses = {}
-    @checkbox_values = params[:checkboxes] || {}
-
-    if user_freetime
-      @user_freetime = user_freetime
-    else
-      @user_freetime = params[:freetime].clone
-      @user_freetime.each do |day, freetime|
-        @user_freetime[day] = freetime.split('')
-      end
-    end
+  def initialize(search_keywords: [], courses_id:)
+    @search_keywords = search_keywords
+    @courses_id = courses_id
   end
 
   def search
     search_result = {}
 
-    @checkbox_values.each do |value|
-      category_name, institute_code, condition_string = value.split(' ')
+    @search_keywords.each do |keyword|
+      category_name, institute_code, condition_string = keyword.split(' ')
 
       first_argument = "institute_code LIKE ?"
       remaining_arguments = [institute_code]
@@ -34,29 +25,59 @@ class CourseSearchService
       end
 
       desired_courses = Course.where(first_argument, *remaining_arguments)
-      search_result[category_name] = CourseSearchService.available_courses(desired_courses, @user_freetime)
+      search_result[category_name] = available_courses(desired_courses)
     end
 
     search_result
   end
 
-  def self.available_courses(desired_courses, user_freetime)
+  def available_courses(desired_courses)
+    user_freetime = current_user_freetime
+
     desired_courses.select do |course|
       compatible = true
 
-      begin
-        course.well_formatted_schedule.each do |day, day_schedule|
-          if day_schedule - user_freetime[day] != []
-            compatible = false
-            break
-          end
+      #begin
+      course.well_formatted_schedule.each do |day, day_schedule|
+        if day_schedule - user_freetime[day] != []
+          compatible = false
+          break
         end
-      rescue => e
-        p e.message
-        p e.backtrace
       end
+      #rescue => e
+        #p e.message
+        #p e.backtrace
+      #end
 
       compatible
+    end
+  end
+
+  private
+
+  def current_user_freetime
+    user_freetime = {
+      '1' => ['1', '2', '3', '4', 'N', '5', '6', '7', '8', '9'],
+      '2' => ['1', '2', '3', '4', 'N', '5', '6', '7', '8', '9'],
+      '3' => ['1', '2', '3', '4', 'N', '5', '6', '7', '8', '9'],
+      '4' => ['1', '2', '3', '4', 'N', '5', '6', '7', '8', '9'],
+      '5' => ['1', '2', '3', '4', 'N', '5', '6', '7', '8', '9']
+    }
+
+    current_courses_schedule.each do |day, course_schedule|
+      user_freetime[day] -= course_schedule
+    end
+
+    user_freetime
+  end
+
+  def current_courses_schedule
+    courses_schedule = Course.find(@courses_id).collect do |course|
+      course.well_formatted_schedule
+    end
+
+    courses_schedule.inject do |result, schedule|
+      result.merge(schedule) {|day, result_schedule, new_schedule| result_schedule | new_schedule}
     end
   end
 end

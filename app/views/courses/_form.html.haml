@@ -56,12 +56,12 @@
       %input{:type => "hidden", :name => "freetime[5]", :id => "friday"}
     = submit_tag "找課", class: "btn btn-success btn-lg"
 .col-md-6
-  = form_tag search_path do
+  = form_tag search_path, remote: true do
     .form-group
       %h3 外系課程
-      = label_tag :institute_code, "系"
-      = select_tag(:institute_code, grouped_options_for_select(options_of_departments), class: "form-control")
-      = label_tag :grade, "年級"
-      = select_tag(:grade, options_for_select((1..4).map {|number| [number.to_s, number]}), class: "form-control")
+      = label_tag "other_department[institute_code]", "系"
+      = select_tag("other_department[institute_code]", grouped_options_for_select(options_of_departments), class: "form-control")
+      = label_tag "other_department[grade]", "年級"
+      = select_tag("other_department[grade]", options_for_select((1..4).map {|number| [number.to_s, number]}), class: "form-control")
     = submit_tag "找課", class: "btn btn-success btn-lg"
 
